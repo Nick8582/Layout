@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lagoona сеть отелей</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <a class="header__logo-position" href="#">
+        <img src="img/logo.png" alt="Lagoona сеть отелей" class="logo">
+      </a>
+      <a href="tel:+74953225448" class="phone">+7 495 322 54 48</a>
+      <button class="personal-btn">Личный кабинет</button>
+    </div>
+    <div class="container">
+      <div class="navigation">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-link"><a href="#" class="nav-text">О нас</a></li>
+            <li class="nav-link"><a href="#" class="nav-text">Услуги</a></li>
+            <li class="nav-link"><a href="#" class="nav-text">Преимущества</a></li>
+            <li class="nav-link"><a href="#" class="nav-text">Размещение</a></li>
+            <li class="nav-link"><a href="#" class="nav-text">Блог</a></li>
+            <li class="nav-link"><a href="#" class="nav-text">Контакты</a></li>
+          </ul>
+        </nav>
+        <input name="search" type="search" placeholder="Поиск" class="search-input">
+        <button class="search-btn"></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container container-forms">
+      <section class="form">
+      <h2 class="title-blocks">Быстрая бронь</h2>
+        <form class="forms-out" action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST">
+          <input class="forms" placeholder="Город" type="text" name="sity">
+          <input class="forms" placeholder="Категория номера" type="text" name="room">
+          <input class="forms" placeholder="Дата заселения" type="date" name="date">
+          <input class="forms" placeholder="Количество ночей" type="number" name="hight">
+          <input class="forms" placeholder="Количество гостей" type="number" name="people">
+          <div class="line-btn">
+            <input class="sumbit-forms" type="submit" name="button" value="Найти номер">
+            <div class="status">
+              <a class="number-offers">9 756</a>
+              <span class="offers">предложений доступно</span>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section class="special-offers">
+        <div class="container-offers">
+          <h2 class="title-blocks">Спецпредложение</h2>
+          <article class="offers-img">
+            <h3 class="offers-title">Номера категории люкс</h3>
+            <div class="price-detailed">
+              <span class="price">от 5 000 р</span>
+              <a href="#" class="detailed">Подробнее</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <section class="about">
+      <div class="container about-container">
+        <h2 class="title-blocks about-title">О нас</h2>
+        <p class="about-text">
+          Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации требуют определения и уточнения существенных финансовых и административных условий.
+        </p>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container container-services">
+        <h2 class="title-blocks">Услуги</h2>
+        <ul class="services-price">
+          <li class="blocks-services services1"> <!--services в этом тэге будем использовать к каждому блоку картинку, как мы использовали в прошлом занятии-->
+            <div class="services-padding">
+              <h3 class="services-price-title">Эксклюзивное обслуживание</h3>
+              <p class="services-price-about">Равным образом постоянный количественный рост и сфера нашей активности</p>
+            </div>
+          </li>
+          <li class="blocks-services services2">
+            <div class="services-padding">
+              <h3 class="services-price-title">Аренда банкетных залов</h3>
+              <p class="services-price-about">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.</p>
+            </div>
+          </li>
+          <li class="blocks-services services3">
+            <div class="services-padding">
+              <h3 class="services-price-title">Сауны, бассейны, бани, фитнес-залы</h3>
+              <p class="services-price-about">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
+            </div>
+          </li>
+          <li class="blocks-services services4">
+            <div class="services-padding">
+              <h3 class="services-price-title">Охраняемые автомобильные стоянки</h3>
+              <p class="services-price-about">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="container container-advanteges">
+        <h2 class="title-blocks">Преимущества</h2>
+        <ul class="blocks-advanteges">
+          <li class="blocks-advanteges-fichers">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="59" viewBox="0 0 63 59">
+              <image id="bathtub" width="63" height="59" xlink:href="data:img/png;base64,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"/>
+            </svg>
+            <p class="advantages-text">
+              Идейные соображения высшего порядка, а также постоянный количественный рост
+            </p>
+          </li>
+          <li class="blocks-advanteges-fichers">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="59" viewBox="0 0 60 59">
+              <image id="hanger" width="60" height="59" xlink:href="data:img/png;base64,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"/>
+            </svg>
+            <p class="advantages-text">
+              Значимость этих проблем настолько очевидна, что вопрос остается открытым
+            </p>
+          </li>
+          <li class="blocks-advanteges-fichers">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69" height="59" viewBox="0 0 69 59">
+              <image id="heating" width="69" height="59" xlink:href="data:img/png;base64,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"/>
+            </svg>
+            <p class="advantages-text">
+              Таким образом реализация плановых заданий играет важную роль для понимания
+            </p>
+          </li>
+          <li class="blocks-advanteges-fichers">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="59" viewBox="0 0 64 59">
+              <image id="hotel-key" width="64" height="59" xlink:href="data:img/png;base64,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"/>
+            </svg>
+            <p class="advantages-text">
+              Повседневная практика показывает, что сложившаяся структура организации
+            </p>
+          </li>
+          <li class="blocks-advanteges-fichers">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61" height="59" viewBox="0 0 61 59">
+              <image id="parking" width="61" height="59" xlink:href="data:img/png;base64,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"/>
+            </svg>
+            <p class="advantages-text">
+              Равным образом рамки и место обучения кадров способствует подготовки сотрудника
+            </p>
+          </li>
+          <li class="blocks-advanteges-fichers">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="59" viewBox="0 0 64 59">
+              <image id="reception" width="64" height="59" xlink:href="data:img/png;base64,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"/>
+            </svg>                          
+            <p class="advantages-text">
+              Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса 
+            </p>
+          </li>
+          <li class="blocks-advanteges-fichers">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68" height="59" viewBox="0 0 68 59">
+              <image id="security-box" width="68" height="59" xlink:href="data:img/png;base64,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"/>
+            </svg>
+            <p class="advantages-text">
+              Повседневная практика показывает, что дальнейшее развитие различных форм
+            </p>
+          </li>
+          <li class="blocks-advanteges-fichers">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="59" viewBox="0 0 60 59">
+              <image id="swimming-pool" width="60" height="59" xlink:href="data:img/png;base64,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"/>
+            </svg>
+            <p class="advantages-text">
+              Значимость этого настолько очевидна, что консультация наших экспертов помогает
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="placement">
+      <div class="container container-placement">
+        <h2 class="title-blocks">Размещение</h2>
+        <ul class="blocks-placement">
+          <li class="blocks-placement-number">
+            <img src="img/placement1.png" atl="" class="placement-img">
+            <div class="blocks-padding-number">
+              <div class="price-star">
+              <p class="placement-price">от <b class="price-bold">4 698 р</b> / ночь</p>
+              <div class="placement-stars-one">
+                <img src="img/star.png" alt="Рейтинг номера 4 из 5" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star_grey.png" alt="" class="placement-stars">
+              </div>
+              </div>
+              <h3 class="placement-name">Lagoona española</h3>
+              <span class="offers-country">Барселона, Испания</span>
+              <button class="placement-btn" >Номера</button>
+            </div>
+          </li>
+          <li class="blocks-placement-number">
+            <img src="img/placement2.png" atl="" class="placement-img">
+            <div class="blocks-padding-number">
+              <div class="price-star">
+              <p class="placement-price">от <b class="price-bold">5 148 р</b> / ночь</p>
+              <div class="placement-stars-one">
+                <img src="img/star.png" alt="Рейтинг номера 4 из 5" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star_grey.png" alt="" class="placement-stars">
+              </div>
+              </div>
+              <h3 class="placement-name">Lagoona son típicas</h3>
+              <span class="offers-country">Барселона, Испания</span>
+              <button class="placement-btn" >Номера</button>
+            </div>
+          </li>
+          <li class="blocks-placement-number">
+            <img src="img/placement3.png" atl="" class="placement-img">
+            <div class="blocks-padding-number">
+              <div class="price-star">
+              <p class="placement-price">от <b class="price-bold">6 254 р</b> / ночь</p>
+              <div class="placement-stars-one">
+                <img src="img/star.png" alt="Рейтинг номера 5 из 5" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+              </div>
+              </div>
+              <h3 class="placement-name">Lagoona de la guerra</h3>
+              <span class="offers-country">Барселона, Испания</span>
+              <button class="placement-btn" >Номера</button>
+            </div>
+          </li>
+
+          <li class="blocks-placement-number">
+            <img src="img/placement4.png" atl="" class="placement-img">
+            <div class="blocks-padding-number">
+              <div class="price-star">
+              <p class="placement-price">от <b class="price-bold">6 320 р</b> / ночь</p>
+              <div class="placement-stars-one">
+                <img src="img/star.png" alt="Рейтинг номера 5 из 5" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+              </div>
+              </div>
+              <h3 class="placement-name">Lagoona mentira piadosa</h3>
+              <span class="offers-country">Барселона, Испания</span>
+              <button class="placement-btn" >Номера</button>
+            </div>
+          </li>
+          <li class="blocks-placement-number">
+            <img src="img/placement5.png" atl="" class="placement-img">
+            <div class="blocks-padding-number">
+              <div class="price-star">
+              <p class="placement-price">от <b class="price-bold">6 457 р</b> / ночь</p>
+              <div class="placement-stars-one">
+                <img src="img/star.png" alt="Рейтинг номера 4 из 5" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star_grey.png" alt="" class="placement-stars">
+              </div>
+              </div>
+              <h3 class="placement-name">Lagoona empujar la creatividad</h3>
+              <span class="offers-country">Барселона, Испания</span>
+              <button class="placement-btn" >Номера</button>
+            </div>
+          </li>
+          <li class="blocks-placement-number">
+            <img src="img/placement6.png" atl="" class="placement-img">
+            <div class="blocks-padding-number">
+              <div class="price-star">
+              <p class="placement-price">от <b class="price-bold">6 490 р</b> / ночь</p>
+              <div class="placement-stars-one">
+                <img src="img/star.png" alt="Рейтинг номера 4 из 5" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star_grey.png" alt="" class="placement-stars">
+              </div>
+              </div>
+              <h3 class="placement-name">Lagoona el retorno</h3>
+              <span class="offers-country">Барселона, Испания</span>
+              <button class="placement-btn" >Номера</button>
+            </div>
+          </li>
+
+          <li class="blocks-placement-number">
+            <img src="img/placement7.png" atl="" class="placement-img">
+            <div class="blocks-padding-number">
+              <div class="price-star">
+              <p class="placement-price">от <b class="price-bold">6 505 р</b> / ночь</p>
+              <div class="placement-stars-one">
+                <img src="img/star.png" alt="Рейтинг номера 5 из 5" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+              </div>
+              </div>
+              <h3 class="placement-name">Lagoona enfermo terminó</h3>
+              <span class="offers-country">Барселона, Испания</span>
+              <button class="placement-btn" >Номера</button>
+            </div>
+          </li>
+          <li class="blocks-placement-number">
+            <img src="img/placement8.png" atl="" class="placement-img">
+            <div class="blocks-padding-number">
+              <div class="price-star">
+              <p class="placement-price">от <b class="price-bold">6 824 р</b> / ночь</p>
+              <div class="placement-stars-one">
+                <img src="img/star.png" alt="Рейтинг номера 4 из 5" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star.png" alt="" class="placement-stars">
+                <img src="img/star_grey.png" alt="" class="placement-stars">
+              </div>
+              </div>
+              <h3 class="placement-name">Lagoona suerte siguió siempre</h3>
+              <span class="offers-country">Барселона, Испания</span>
+              <button class="placement-btn">Номера</button>
+            </div>
+          </li>
+
+          <li class="blocks-placement-number">
+            <div class="blocks-placement-next-number">
+              <a href="https://skillbox.ru" class="next-number">Посмотреть все варианты</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container container-form">
+        <h2 class="title-blocks">Контакты</h2>
+        <div class="container-contacs">
+          <div class="block-call">
+
+            <ul class="table-contact">
+
+              <li class="contact-flex">
+                <div class="left-contacts">
+                  <h4 class="title-contact">Адрес</h4>
+                </div>
+                <p class="text-contact">Москва, улица Юности, дом 5 строение 4, офис 2</p>
+              </li>
+
+              <li class="contact-flex">
+                <div class="left-contacts">
+                  <h4 class="title-contact">Телефоны</h4>
+                </div>
+                <div class="phone-blocks">
+                  <a href="tel:+74995356434" class="phone-contact"> +7 (499) 535-64-34 </a>
+                  <a href="tel:+74950050544" class="phone-contact"> +7 (495) 005-05-44 </a>
+                </div>
+              </li>
+
+              <li class="contact-flex">
+                <div class="left-contacts">
+                  <h4 class="title-contact">E-mail</h4>
+                </div>
+                <div class="e-mail">
+                  <p class="text-contact mod-contacts"><a class="e-mail-mod" href="lg.oona@mail.ru">lg.oona@mail.ru</a> по вопросам бронирования </p>
+                  <p class="text-contact mod-contacts"><a class="e-mail-mod" href="hotels.ln@mail.ru">hotels.ln@mail.ru</a> по вопросам сотрудничества </p>
+                </div>
+              </li>
+
+              <li class="contact-flex">
+                <div class="left-contacts">
+                  <h4 class="title-contact">График</h4>
+                </div>
+                <p class="text-contact chart">Понедельник - пятница, с 10:0 до 19:00</p>
+              </li>
+
+            </ul>
+
+            <a href="#" class="maps-btn">Построить маршрут</a>
+          </div>
+          <div class="form-blocks-end">
+            <h2 class="title-blocks form-title">Остались вопросы?</h2>
+            <form class="form-end" action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST">
+              <input type="text" name="name" class="form-end-name" placeholder="Имя">
+              <input type="tel" name="phone" class="form-end-name" placeholder="+7">
+              <textarea placeholder="Сообщение..." name="messege" class="form-end-name input-message"></textarea>
+              <p class="policy">Отправляя свои данные вы соглашаетесь с <a href="#" class="privacy-policy">Политикой конфиденциальности</a></p>
+              <button type="submit" class="form-btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container">
+      <div class="footer">
+        <div class="copyriting">
+          <p class="copyriting-text">© 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»</p>
+          <p class="copyriting-text">Представленная на сайте информация носит справочный характер и не является публичной офертой</p>
+          <a href="#" class="copyriting-text">Пользовательское соглашение</a>
+        </div>
+
+        <div class="footer-contacts">
+          <p class="copyriting-text">11710, улица Юности, дом 5 строение 4, офис 2</p>
+          <div class="footer-phone">
+            <a class="footer-phone-mod" href="tel:+74995356434">+7 (499) 535-64-34</a>
+            <a class="footer-phone-mod" href="tel:+74950050544">+7 (495) 005-05-44</a>
+          </div>
+          <div class="footer-email">
+            <a class="footer-email-mod" href="lg.oona@mail.ru">lg.oona@mail.ru</a> 
+            <a class="footer-email-mod" href="hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+          </div>
+        </div>
+        <ul class="social-footer">
+          <li class="table-social"><a href="#" class="social1"></a></li>
+          <li class="table-social"><a href="#" class="social2"></a></li>
+          <li class="table-social"><a href="#" class="social3"></a></li>
+          <li class="table-social"><a href="#" class="social4"></a></li>
+          <li class="table-social"><a href="#" class="social5"></a></li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
