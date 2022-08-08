@@ -1,0 +1,44 @@
+.container {
+  max-width: $container-1920;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  &-studio {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 630px 630px;
+    color: $white;
+    padding-top: 35px;
+    padding-bottom: 68px;
+  }
+}
+
+.section-title {
+  font-family: $font-bold;
+  font-weight: 700;
+  font-size: 23px;
+  margin: 0;
+  line-height: 25px;
+  margin-bottom: 18px;
+}
+
+@media (max-width: $table) {
+  .container {
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+}
+
+@media (max-width: $mintable) {
+  .container {
+    padding-right: 21px;
+    padding-left: 21px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .section-title {
+    font-size: 17px;
+    line-height: 20px;
+  }
+}

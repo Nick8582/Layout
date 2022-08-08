@@ -1,0 +1,24 @@
+@mixin formInput {
+  background-color: $white-grey;
+  border: none;
+  padding: 16px 23px;
+  outline: none;
+  &::placeholder {
+    transition: color .3s ease;
+  }
+  &:hover {
+    &::placeholder {
+      color: $orange;
+    }
+  }
+  &:focus {
+    box-shadow: 0 0 0 1px $orange inset;
+  }
+}
+
+@mixin fs24px {
+  font-family: $font-bold;
+  line-height: 22px;
+  font-weight: 400;
+  font-size: 24px;
+}

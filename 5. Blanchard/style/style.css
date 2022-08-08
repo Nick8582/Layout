@@ -1108,7 +1108,7 @@ a {
 }
 
 .nav-btn--next.nav-btn--big::before {
-  left: calc(50% - 12px / 2);
+  left: calc(50% - 14px / 2);
 }
 
 .nav-btn--prev.nav-btn--big::before {
@@ -2482,7 +2482,7 @@ a {
     padding: 14px 15px;
   }
   .footer {
-    padding: 42px 0;
+    padding: 35px 0;
   }
   .footer__item:not(:last-child) {
     margin-right: 27px;
@@ -2823,7 +2823,7 @@ a {
   }
   .js-validate-error-label {
     top: auto;
-    bottom: 5px;
+    top: -17px;
     left: 20px;
   }
   .input {

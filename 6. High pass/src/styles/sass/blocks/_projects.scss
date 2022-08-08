@@ -1,0 +1,302 @@
+.projects {
+  padding-top: 71px;
+  padding-bottom: 27px;
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__list-upper {
+    margin-bottom: 45px;
+    display: grid;
+    gap: calc(15px + 15 * ((100vw - 1024px)/ 896));
+    grid-template-columns: repeat(5, 1fr);
+  }
+  &__item {
+    position: relative;
+  }
+  &__figure {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__img {
+    margin-bottom: 14px;
+  }
+  &__figcaption {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  &__link,
+  &__card-name {
+    text-decoration: none;
+    color: $black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0;
+    margin-bottom: auto;
+    padding-right: 8px;
+    transition: color .3s ease;
+    position: relative;
+    &-span {
+      position: relative;
+      z-index: 1;
+      font-family: $font-stack;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 0;
+      bottom: 0;
+      right: -5px;
+      background-color: transparent;
+    }
+    &:hover {
+      color: $orange;
+    }
+    &:active {
+      color: $active;
+      background-color: transparent;
+    }
+    &:focus:not(:active) {
+      color: $black;
+      &::after {
+        background-color: $text-background;
+      }
+    }
+  }
+  &__calendar {
+    width: 12px;
+    height: 12px;
+    fill: $grey;
+    margin-right: 6px;
+  }
+  &__day {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  &__category {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    padding: 6px 15px;
+    text-align: center;
+    font-size: 14px;
+    background-color: $black;
+    color: $white;
+    text-decoration: none;
+  }
+  &__item {
+    &-fiji,
+    &-oblivion {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 22px;
+      padding-bottom: 34px;
+      padding-left: 30px;
+      min-height: 300px;
+      padding-right: calc(217px + 95 * ((100vw - 1024px)/ 896));
+      color: $white;
+      .date {
+        color: $white;
+      }
+      .projects__calendar {
+        fill: $white;
+      }
+    }
+  }
+  &__item-fiji {
+    grid-column: span 2;
+    background: url(../images/jpg/project-4-1920.jpg) center/cover no-repeat;
+  }
+  &__item-oblivion {
+    grid-column: span 3;
+    background: url(../images/jpg/project-5-1920.jpg) center/cover no-repeat;
+  }
+  &__name {
+    margin: 0;
+    font-family: $font-bold;
+    font-size: 23px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  &__discription {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  &__btn {
+    text-decoration: none;
+    color: $white;
+    max-width: 120px;
+  }
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  color: $grey-text;
+}
+
+@media (max-width: $bigtable) {
+  .projects {
+    &__list {
+      &-upper {
+        grid-template-columns: repeat(8, 1fr);
+        gap: 25px 30px;
+      }
+    }
+    &__img {
+      max-width: 100%;
+      margin-bottom: 12px;
+    }
+    &__item {
+      &-1 {
+        grid-column: 2 span;
+      }
+      &-2 {
+        grid-column: 2 span;
+      }
+      &-3 {
+        grid-column: 4 span;
+      }
+      &-4 {
+        grid-row: 2;
+        grid-column: 5 span;
+      }
+      &-6 {
+        grid-row: 2;
+        grid-column: 3 span;
+      }
+      &-7 {
+        grid-row: 3;
+        grid-column: 3 span;
+      }
+      &-5 {
+        grid-column: 5 span;
+      }
+      &-fiji,
+      &-oblivion {
+        padding-top: 30px;
+        padding-right: calc(273px + 95 * (100vw - 1024px)/ 896);
+        padding-bottom: 39px;
+        min-height: 306px;
+      }
+      &-oblivion {
+        padding-bottom: 30px;
+      }
+    }
+    &__link {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: $table) {
+  .projects {
+    &__list {
+      &-upper {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 30px 30px;
+      }
+    }
+    &__img {
+      margin-bottom: 15px;
+    }
+    &__item {
+      &-1,
+      &-2,
+      &-3 {
+        grid-row: 1;
+        grid-column: 2 span;
+      }
+      &-4 {
+        grid-column: 6 span;
+      }
+      &-5 {
+        grid-row: 4;
+        grid-column: 6 span;
+      }
+      &-6,
+      &-7 {
+        grid-row: 3;
+        grid-column: 3 span;
+      }
+      &-fiji,
+      &-oblivion {
+        padding-bottom: 32px;
+        padding-right: calc(421px + 95 * (100vw - 1024px)/ 896);
+        min-height: 296px;
+      }
+    }
+    &__link {
+      margin-bottom: auto;
+    }
+    &__figcaption {
+      min-height: 100px;
+    }
+    &__name {
+      margin-bottom: 5px;
+    }
+  }
+  .date {
+    margin-bottom: 2px;
+  }
+}
+
+@media (max-width: $mintable) {
+  .projects {
+    padding-top: 51px;
+    padding-bottom: 0;
+    &__list-upper {
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+    &__item {
+      grid-row: auto;
+      grid-column: auto;
+      &-fiji,
+      &-oblivion {
+        padding-right: 35px;
+        padding-top: 194px;
+      }
+      &-5 {
+        grid-row: 7;
+      }
+    }
+    &__img {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    &__figcaption {
+      min-height: 75px;
+    }
+    &__link {
+      line-height: 21px;
+    }
+    &__category {
+      right: 5px;
+      padding: 3px 12px;
+      font-size: 13px;
+    }
+    &__content {
+      margin-bottom: 23px;
+    }
+    &__name {
+      padding-top: 4px;
+      margin-bottom: 10px;
+    }
+    &__discription {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__btn {
+      max-width: 106px;
+      padding: 9px 17px;
+      font-size: 14px;
+    }
+  }
+}

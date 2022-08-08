@@ -1,0 +1,165 @@
+.works {
+  padding-top: 16px;
+  margin-bottom: 64px;
+  &__container,
+  &__list {
+    display: grid;
+    gap: 25px 30px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+  }
+  &__event {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 2;
+    color: $white;
+    min-height: 630px;
+    padding: 60px 145px 60px 60px;
+    background: url(../images/jpg/hero-1-1920.jpg) center/cover no-repeat;
+  }
+  &__category {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: $black;
+    text-align: center;
+    padding: 7px 16px;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: $white;
+  }
+  &__discription {
+    margin-bottom: 3px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 19px;
+    font-family: $font-bold;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 37px;
+  }
+  &__heading {
+    margin: 0;
+    margin-bottom: 18px;
+    color: $black;
+    font-family: $font-bold;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+  }
+  &__item-1 {
+    grid-column: span 2;
+  }
+  &__img {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: $bigtable) {
+  .works {
+    padding-top: 10px;
+    margin-bottom: 60px;
+    &__container {
+      grid-template-columns: 48.4% 48.4%;
+      gap: 30px;
+    }
+    &__event {
+      min-height: 622px;
+      padding: 20px 20px 30px 31px;
+      background: url(../images/jpg/hero-1-1024.jpg) center/cover no-repeat;
+      margin-bottom: 4px;
+    }
+    &__category {
+      padding: 7px 17px 7px 14px;
+    }
+    &__discription {
+      margin-bottom: 8px;
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 35px;
+      margin-bottom: 23px;
+      letter-spacing: 0.2px;
+    }
+    &__heading {
+      margin-bottom: 24px;
+    }
+    &__list {
+      gap: 25px;
+    }
+  }
+}
+
+@media (max-width: $table) {
+  .works {
+    &__container {
+      grid-template-columns: 48% 48%;
+    }
+    &__event {
+      min-height: 453px;
+      background: url(../images/jpg/hero-1-768.jpg) center/cover no-repeat;
+      padding: 30px 76px 30px 28px;
+    }
+    &__category {
+      padding: 8px 18px 7px 15px;
+    }
+    &__discription {
+      margin-bottom: 12px;
+    }
+    &__title {
+      line-height: 32px;
+    }
+    &__heading {
+      font-size: 20px;
+      line-height: 22px;
+      margin-bottom: 18px;
+    }
+  }
+}
+
+@media (max-width: $mintable) {
+  .works {
+    padding-top: 6px;
+    &__container {
+      grid-template-columns: 1fr;
+    }
+    &__event {
+      background: url(../images/jpg/hero-1-320.jpg) center/cover no-repeat;
+      padding: 233px 40px 29px 28px;
+    }
+    &__discription {
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+    &__title {
+      font-size: 22px;
+      letter-spacing: .6px;
+      line-height: 26px;
+      margin-bottom: 16px;
+    }
+    &__heading {
+      font-size: 17px;
+      line-height: 19px;
+      margin-bottom: 16px;
+    }
+    &__category {
+      top: 0;
+      right: 0;
+      font-size: 12px;
+      padding: 9px 14px 8px 14px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .works {
+    margin-bottom: 44px;
+  }
+}

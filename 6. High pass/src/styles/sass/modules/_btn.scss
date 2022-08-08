@@ -1,0 +1,72 @@
+.btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+  &--orange {
+    max-width: 159px;
+    background: $orange;
+    color: $white;
+    padding: 15px 21px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    transition: background .3s ease, box-shadow .3s ease;
+    &:hover {
+      background-color: $hover;
+    }
+    &:focus {
+      outline: none;
+      background-color: $orange;
+      box-shadow: 0 0 0 3px $active inset;
+    }
+    &:active {
+      background-color: $active;
+    }
+  }
+  &--orange-outline {
+    background: transparent;
+    outline: $orange 3px solid;
+    text-align: center;
+    font-weight: 700;
+    padding: 12px 19px;
+    outline-offset: -1px;
+    transition: outline .3s ease, background .3s ease;
+    &:hover {
+      background-color: $orange;
+    }
+    &:focus {
+      background-color: $hover;
+    }
+    &:active {
+      background-color: $active;
+      outline: $active 3px solid;
+    }
+  }
+}
+
+.header__search-btn {
+  width: 25px;
+  height: 25px;
+  outline: none;
+  padding: 0;
+}
+
+@media (max-width: $bigtable) {
+  .btn {
+    &--orange-outline {
+      padding: 14px 19px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .btn {
+    &--orange {
+      font-size: 14px;
+      max-width: 148px;
+      padding: 11px 23px;
+    }
+  }
+}

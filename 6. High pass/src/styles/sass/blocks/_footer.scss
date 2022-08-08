@@ -1,0 +1,117 @@
+.footer {
+  background-color: $black;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 26px;
+    padding-bottom: 18px;
+  }
+  &__logo {
+    width: 190px;
+    height: 30px;
+    margin-bottom: 3px;
+  }
+  &__name {
+    font-family: $font-bold;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $white-grey;
+  }
+  &__center {
+    max-width: 370px;
+    margin-right: 118px;
+  }
+  &__discription {
+    color: $grey-light;
+    line-height: 22px;
+    font-family: $font-stack;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+  }
+  &__right {
+    text-align: end;
+    align-items: flex-end;
+    color: $grey-light;
+  }
+  &__text {
+    font-family: $font-stack;
+    margin-bottom: 10px;
+  }
+}
+
+.sochal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+  &__link:focus>.sochal__icon {
+    fill: $hover;
+  }
+  &__link {
+    outline: none;
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    fill: $grey-light;
+    transition: fill .3s ease;
+    &:hover {
+      fill: $orange;
+    }
+    &:active {
+      fill: $active;
+    }
+  }
+}
+
+@media (max-width: $bigtable) {
+  .footer {
+    &__logo {
+      width: 168px;
+      height: 34px;
+      margin-bottom: 1px;
+    }
+    &__center {
+      margin-left: auto;
+      margin-right: 62px;
+    }
+  }
+}
+
+@media (max-width: $table) {
+  .footer {
+    &__center {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $mintable) {
+  .footer {
+    &__container {
+      flex-direction: column-reverse;
+      padding: 0;
+    }
+    &__right {
+      text-align: center;
+      padding: 30px;
+    }
+    &__left {
+      align-items: center;
+      text-align: center;
+      padding: 11px;
+      background-color: $grey
+    }
+    &__logo {
+      width: 112px;
+      height: 24px;
+    }
+    &__name {
+      font-size: 10px;
+      line-height: 1;
+    }
+  }
+}

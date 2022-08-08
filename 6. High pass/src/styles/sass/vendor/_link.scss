@@ -1,0 +1,27 @@
+.link {
+  &-menu {
+    transition: color ease .3s;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+      color: $orange;
+    }
+    &:active {
+      color: $active;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      right: -5px;
+      left: -5px;
+      top: -3px;
+      bottom: -3px;
+      transition: background ease .3s;
+    }
+    &:focus {
+      &::after {
+        background: $active;
+      }
+    }
+  }
+}

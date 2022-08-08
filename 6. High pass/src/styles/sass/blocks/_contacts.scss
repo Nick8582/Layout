@@ -1,0 +1,284 @@
+.contacts {
+  padding-bottom: 43px;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px 30px;
+    color: $black;
+  }
+  &__title {
+    grid-column: 3 span;
+    margin-bottom: 0px;
+  }
+  &__left {
+    position: relative;
+    min-height: 465px;
+    max-height: 465px;
+    max-width: 100%;
+    grid-column: 2 span;
+    padding-top: 5px;
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 span;
+  }
+  &__map {
+    height: 100%;
+  }
+  &__caption {
+    margin: 0;
+    margin-bottom: 5px;
+    @include fs24px;
+  }
+  &__content {
+    color: $grey-text;
+    line-height: 22px;
+    font-size: 16px;
+    font-family: $font-stack;
+    margin-bottom: 11px;
+    font-weight: 400;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    &-item {
+      position: relative;
+      margin-bottom: 17px;
+    }
+  }
+  &__input {
+    color: $black;
+    @include formInput;
+    width: 100%;
+    font-family: $font-stack;
+    border: 1px solid transparent;
+  }
+  &__textarea {
+    resize: none;
+    min-height: 150px;
+    @include formInput;
+    width: 100%;
+    font-family: $font-stack;
+    border: 1px solid transparent;
+  }
+  &__btn {
+    max-width: 126px;
+  }
+  &__adress {
+    position: absolute;
+    top: 5px;
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    padding: 60px;
+    padding-top: 175px;
+    left: 0;
+    bottom: 0;
+    max-width: 410px;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba($black, .85);
+  }
+  &__discription {
+    line-height: 28px;
+    color: $grey-light;
+  }
+  &__phone {
+    position: relative;
+    display: flex;
+    font-family: $font-bold;
+    text-decoration: none;
+    color: $orange;
+    fill: $orange;
+    outline: none;
+    padding-left: 2px;
+    padding-top: 4px;
+    transition: color ease .3s, fill ease .3s;
+    &-logo {
+      width: 17px;
+      height: 17px;
+      margin-right: 3px;
+    }
+    &:active {
+      color: $active;
+      fill: $active;
+    }
+    &:hover {
+      color: $white;
+      fill: $white;
+    }
+    &:focus {
+      color: $hover;
+      fill: $hover;
+    }
+  }
+  &__close {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $grey-text;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: 4px;
+      width: 12px;
+      height: 1px;
+      border: 1px solid $white;
+      transform: rotate(45deg);
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: 4px;
+      width: 12px;
+      height: 1px;
+      border: 1px solid $white;
+      transform: rotate(135deg);
+    }
+  }
+}
+
+.js-validate-error-label {
+  position: absolute;
+  top: 3px;
+  left: 23px;
+  font-size: 9px;
+  line-height: 11px;
+  font-weight: 400;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+
+[class*="copyrights-pane"] {
+  display: none;
+}
+
+@media (max-width: $bigtable) {
+  .contacts {
+    &__container {
+      grid-template-columns: repeat(8, 1fr);
+    }
+    &__title {
+      grid-column: 8 span;
+    }
+    &__left {
+      grid-column: 5 span;
+    }
+    &__right {
+      grid-column: 3 span;
+    }
+    &__adress {
+      top: auto;
+      right: 0;
+      max-width: 100%;
+      padding: 25px 110px 25px 30px;
+    }
+  }
+}
+
+@media (max-width: $table) {
+  .contacts {
+    &__container {
+      grid-template-columns: repeat(6, 1fr);
+      gap: 20px 30px;
+    }
+    &__title {
+      grid-column: 6 span;
+    }
+    &__left {
+      grid-row: 2;
+      grid-column: 6 span;
+      margin-bottom: 3px;
+    }
+    &__right {
+      grid-row: 3;
+      grid-column: 4 span;
+    }
+    &__adress {
+      padding-right: 230px;
+      padding-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: $mintable) {
+  .contacts {
+    padding-top: 2px;
+    padding-bottom: 24px;
+    &__container {
+      grid-template-columns: 1fr;
+      padding: 0;
+    }
+    &__title,
+    &__right {
+      grid-column: 1 span;
+      padding: 0 21px;
+    }
+    &__left {
+      grid-column: 1 span;
+    }
+    &__adress {
+      padding-right: 30px;
+      padding-left: 20px;
+      padding-bottom: 13px;
+    }
+    &__caption {
+      font-size: 18px;
+    }
+    &__discription {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 13px;
+      padding-top: 5px;
+    }
+    &__phone {
+      padding-left: 0;
+      font-size: 14px;
+      line-height: 14px;
+      &-logo {
+        width: 14px;
+        height: 14px;
+      }
+    }
+    &__content {
+      font-size: 14px;
+      line-height: 18px;
+      padding-top: 4px;
+      margin-bottom: 16px;
+    }
+    &__input,
+    &__textarea {
+      font-size: 14px;
+      padding: 12px 23px;
+    }
+    &__btn {
+      max-width: 115px;
+    }
+  }
+}
+
+@media (max-width: $table) {
+  .contacts {
+    padding-bottom: 46px;
+    &__caption {
+      margin-bottom: 6px;
+    }
+    &__discription {
+      margin-bottom: 3px;
+    }
+    &__map {
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+    }
+  }
+}
