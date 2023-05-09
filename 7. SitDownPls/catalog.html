@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>sdp.ru | Каталог</title>
+    <link rel="icon" type="image/png" href="./favicon.ico"/>
+    <link rel="stylesheet" href="./cssResources/choices.min.css"/>
+    <link rel="stylesheet" href="./cssResources/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./cssResources/nouislider.min.css"/>
+    <link rel="stylesheet" href="./styles/main.css"/>
+    <script src="./jsResources/choices.min.js" defer="defer"></script>
+    <script src="./jsResources/swiper-bundle.min.js" defer="defer"></script>
+    <script src="./jsResources/popper.min.js" defer="defer"></script>
+    <script src="./jsResources/tippy-bundle.umd.min.js" defer="defer"></script>
+    <script src="./jsResources/inputmask.min.js" defer="defer"></script>
+    <script src="./jsResources/just-validate.production.min.js" defer="defer"></script>
+    <script src="./jsResources/nouislider.min.js" defer="defer"></script>
+    <script src="./jsResources/wNumb.min.js" defer="defer"></script>
+    <script src="app.js" defer="defer"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <div class="header__region"><span class="header__text">Ваш регион:</span>
+            <select class="header__select">
+              <option value="Москва">Москва</option>
+              <option value="Казань">Казань</option>
+              <option value="Уфа">Уфа</option>
+              <option value="Пермь">Пермь</option>
+            </select>
+          </div><a class="header__phone phone" href="tel:+74958854547" aria-label="Позвонить по телефону">
+            <svg class="phone__icon" width="20" height="20">
+              <use xlink:href="images/sprite.svg#phoneHeader"></use>
+            </svg> +7 (495) 885-45-47</a>
+          <nav class="header__menu-top menu-top">
+            <ul class="menu-top__list">
+              <li class="menu-top__item"><a class="menu-top__link link link--gray" href="/about.html">О компании</a></li>
+              <li class="menu-top__item"><a class="menu-top__link link link--gray" href="/about.html">Гарантия и возврат</a></li>
+              <li class="menu-top__item"><a class="menu-top__link link link--gray" href="/about.html">Корпоративным клиентам</a></li>
+              <li class="menu-top__item"><a class="menu-top__link link link--gray" href="/about.html">Дизайн-решение</a></li>
+            </ul>
+          </nav><a class="header__logo" href="#"><img class="header__img" src="images/logo.svg" alt="Логотип - Интернет магазина"/></a>
+          <button class="header__burger-menu burger-menu"><span class="burger-menu__icon"></span></button>
+          <nav class="header__bottom-menu bottom-menu">
+            <ul class="bottom-menu__list">
+              <li class="bottom-menu__item"><a class="bottom-menu__link" href="/catalog.html">Каталог</a></li>
+              <li class="bottom-menu__item"><a class="bottom-menu__link" href="/catalog.html">Магазины</a></li>
+              <li class="bottom-menu__item"><a class="bottom-menu__link" href="/catalog.html">Шоу-рум</a></li>
+              <li class="bottom-menu__item"><a class="bottom-menu__link" href="/catalog.html">Доставка и оплата</a></li>
+              <li class="bottom-menu__item"><a class="bottom-menu__link" href="/catalog.html">Дисконт</a></li>
+              <li class="bottom-menu__item"><a class="bottom-menu__link" href="/catalog.html">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__forms">
+            <form class="header__form">
+              <svg class="header__icon" width="20" height="20">
+                <use xlink:href="images/sprite.svg#search"></use>
+              </svg>
+              <input class="header__search" type="text" placeholder="Я хочу купить..." aria-label="Введите запрос"/>
+              <button class="header__btn-search" aria-label="Поиск"><span class="header__btn-right"></span></button>
+            </form>
+            <select class="header__filter filter">
+              <option value="Категория">Категория</option>
+              <option value="Диваны">Диваны</option>
+              <option value="Кресла">Кресла</option>
+              <option value="Пуфы">Пуфы</option>
+              <option value="Кровати">Кровати</option>
+              <option value="Тумбы">Тумбы</option>
+              <option value="Комоды">Комоды</option>
+              <option value="Стулья">Стулья</option>
+              <option value="Столы">Столы</option>
+              <option value="Аксессуары">Аксессуары</option>
+            </select>
+          </div>
+          <div class="header__btn">
+            <button class="header__profile" aria-label="Кнопка профиля">
+              <svg class="header__user">
+                <use xlink:href="images/sprite.svg#profile"></use>
+              </svg>
+            </button>
+            <button class="header__cart" aria-label="Корзина"><span class="header__cart-sum">0</span>
+              <svg class="header__cart-icon">
+                <use xlink:href="images/sprite.svg#cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Диваны</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Прямые диваны</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="catalog">
+        <h1 class="title">Каталог интернет-магазина sdp.</h1>
+        <div class="container catalog__container">
+          <div class="catalog__filter filter">
+            <h3 class="filter__title"><span class="filter__title-long"> Фильтровать по:</span><span class="filter__title-short">Фильтры:</span></h3>
+            <ul class="filter__list">
+              <li class="filter__param">
+                <button class="filter__name">Категория</button>
+                <ul class="filter__category-list">
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="category"/><span class="custom custom--checkbox custom--checkbox-filter">Диваны</span>
+                    </label>
+                  </li>
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="category"/><span class="custom custom--checkbox custom--checkbox-filter">Кресла</span>
+                    </label>
+                  </li>
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="category"/><span class="custom custom--checkbox custom--checkbox-filter">Пуфы</span>
+                    </label>
+                  </li>
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="category"/><span class="custom custom--checkbox custom--checkbox-filter">Кровати</span>
+                    </label>
+                  </li>
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="category"/><span class="custom custom--checkbox custom--checkbox-filter">Тумбы</span>
+                    </label>
+                  </li>
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="category"/><span class="custom custom--checkbox custom--checkbox-filter">Комоды</span>
+                    </label>
+                  </li>
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="category"/><span class="custom custom--checkbox custom--checkbox-filter">Стулья</span>
+                    </label>
+                  </li>
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="category"/><span class="custom custom--checkbox custom--checkbox-filter">Столы</span>
+                    </label>
+                  </li>
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="category"/><span class="custom custom--checkbox custom--checkbox-filter">Аксессуары</span>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li class="filter__param">
+                <button class="filter__name">Цена</button>
+                <div class="filter__options">
+                  <div class="filter__options-price js-filter-price-options">
+                    <label class="filter__range-label"><span class="filter__range-text">от</span>
+                      <input class="filter__range-input js-filter-price-from" type="text" name="price"/>
+                    </label>
+                    <label class="filter__range-label"><span class="filter__range-text">до</span>
+                      <input class="filter__range-input js-filter-price-to" type="text" name="price"/>
+                    </label>
+                  </div>
+                  <div class="filter__range-slider"></div>
+                </div>
+              </li>
+              <li class="filter__param">
+                <button class="filter__name">Скидка</button>
+                <ul class="filter__category-list">
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="discount"/><span class="custom custom--checkbox custom--checkbox-filter">Более 5 000</span>
+                    </label>
+                  </li>
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="discount"/><span class="custom custom--checkbox custom--checkbox-filter">Менее 5 000</span>
+                    </label>
+                  </li>
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="discount"/><span class="custom custom--checkbox custom--checkbox-filter">Не важно</span>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li class="filter__param">
+                <button class="filter__name">Цвет</button>
+                <ul class="filter__category-list">
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="color"/><span class="custom custom--checkbox custom--checkbox-filter">Коричневый</span>
+                    </label>
+                  </li>
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="color"/><span class="custom custom--checkbox custom--checkbox-filter">Черный</span>
+                    </label>
+                  </li>
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="color"/><span class="custom custom--checkbox custom--checkbox-filter">Бежевый</span>
+                    </label>
+                  </li>
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="color"/><span class="custom custom--checkbox custom--checkbox-filter">Серый</span>
+                    </label>
+                  </li>
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="color"/><span class="custom custom--checkbox custom--checkbox-filter">Белый</span>
+                    </label>
+                  </li>
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="color"/><span class="custom custom--checkbox custom--checkbox-filter">Синий</span>
+                    </label>
+                  </li>
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="color"/><span class="custom custom--checkbox custom--checkbox-filter">Оранжевый</span>
+                    </label>
+                  </li>
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="color"/><span class="custom custom--checkbox custom--checkbox-filter">Желтый</span>
+                    </label>
+                  </li>
+                  <li class="filter__category-item">
+                    <label class="custom custom--check-label">
+                      <input class="custom custom--check" type="checkbox" name="color"/><span class="custom custom--checkbox custom--checkbox-filter">Зеленый</span>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <h2 class="container__title catalog__title">Каталог</h2>
+          <ul class="catalog__filter-tag-list"></ul>
+          <div class="catalog__cards card">
+            <ul class="card__list card__list--catalog">
+              <li class="card__wrap">
+                <article class="card__item card__item--rating"><span class="card__rating">5,0</span><img class="card__img" src="images/product-1.png" alt="Диван кожаный “R-94”"/>
+                  <div class="card__discription">
+                    <h3 class="card__title card__title--rating">Диван кожаный “R-94”</h3>
+                    <div class="card__price card__price-modification"><span class="card__price-rating">94 990 руб</span></div><a class="card__link btn btn--border" href="product.html">Купить</a>
+                  </div>
+                </article>
+              </li>
+              <li class="card__wrap">
+                <article class="card__item card__item--rating"><span class="card__rating">4,9</span><img class="card__img" src="images/product-2.png" alt="Диван апартековый “T-75”"/>
+                  <div class="card__discription">
+                    <h3 class="card__title card__title--rating">Диван апартековый “T-75”</h3>
+                    <div class="card__price card__price-modification"><span class="card__price-rating">69 990 руб</span></div><a class="card__link btn btn--border" href="product.html">Купить</a>
+                  </div>
+                </article>
+              </li>
+              <li class="card__wrap">
+                <article class="card__item card__item--rating"><span class="card__rating">4,8</span><img class="card__img" src="images/product-3.png" alt="Диван тканевый “D-31”"/>
+                  <div class="card__discription">
+                    <h3 class="card__title card__title--rating">Диван тканевый “D-31”</h3>
+                    <div class="card__price card__price-modification"><span class="card__price-rating">28 490 руб</span></div><a class="card__link btn btn--border" href="product.html">Купить</a>
+                  </div>
+                </article>
+              </li>
+              <li class="card__wrap">
+                <article class="card__item card__item--rating"><span class="card__rating">4,8</span><img class="card__img" src="images/product-4.png" alt="Диван велюровый “Y-68”"/>
+                  <div class="card__discription">
+                    <h3 class="card__title card__title--rating">Диван велюровый “Y-68”</h3>
+                    <div class="card__price card__price-modification"><span class="card__price-rating">22 990 руб</span></div><a class="card__link btn btn--border" href="product.html">Купить</a>
+                  </div>
+                </article>
+              </li>
+              <li class="card__wrap">
+                <article class="card__item card__item--rating"><span class="card__rating">4,8</span><img class="card__img" src="images/product-5.png" alt="Диван из шинила “W-95”"/>
+                  <div class="card__discription">
+                    <h3 class="card__title card__title--rating">Диван из шинила “W-95”</h3>
+                    <div class="card__price card__price-modification"><span class="card__price-rating">22 990 руб</span></div><a class="card__link btn btn--border" href="product.html">Купить</a>
+                  </div>
+                </article>
+              </li>
+              <li class="card__wrap">
+                <article class="card__item card__item--rating"><span class="card__rating">4,8</span><img class="card__img" src="images/product-6.png" alt="Диван флоковый “G-41”"/>
+                  <div class="card__discription">
+                    <h3 class="card__title card__title--rating">Диван флоковый “G-41”</h3>
+                    <div class="card__price card__price-modification"><span class="card__price-rating">17 990 руб</span></div><a class="card__link btn btn--border" href="product.html">Купить</a>
+                  </div>
+                </article>
+              </li>
+              <li class="card__wrap">
+                <article class="card__item card__item--rating"><span class="card__rating">4,8</span><img class="card__img" src="images/product-7.png" alt="Диван шиниловый “V-43”"/>
+                  <div class="card__discription">
+                    <h3 class="card__title card__title--rating">Диван шиниловый “V-43”</h3>
+                    <div class="card__price card__price-modification"><span class="card__price-rating">19 990 руб</span></div><a class="card__link btn btn--border" href="product.html">Купить</a>
+                  </div>
+                </article>
+              </li>
+              <li class="card__wrap">
+                <article class="card__item card__item--rating"><span class="card__rating">4,7</span><img class="card__img" src="images/product-8.png" alt="Диван велюровый “S-99”"/>
+                  <div class="card__discription">
+                    <h3 class="card__title card__title--rating">Диван велюровый “S-99”</h3>
+                    <div class="card__price card__price-modification"><span class="card__price-rating">19 990 руб</span></div><a class="card__link btn btn--border" href="product.html">Купить</a>
+                  </div>
+                </article>
+              </li>
+              <li class="card__wrap">
+                <article class="card__item card__item--rating"><span class="card__rating">4,7</span><img class="card__img" src="images/product-9.png" alt="Диван из кожзама “F-85”"/>
+                  <div class="card__discription">
+                    <h3 class="card__title card__title--rating">Диван из кожзама “F-85”</h3>
+                    <div class="card__price card__price-modification"><span class="card__price-rating">26 990 руб</span></div><a class="card__link btn btn--border" href="product.html">Купить</a>
+                  </div>
+                </article>
+              </li>
+              <li class="card__wrap">
+                <article class="card__item card__item--rating"><span class="card__rating">4,6</span><img class="card__img" src="images/product-10.png" alt="Диван флоковый “H-64”"/>
+                  <div class="card__discription">
+                    <h3 class="card__title card__title--rating">Диван флоковый “H-64”</h3>
+                    <div class="card__price card__price-modification"><span class="card__price-rating">25 990 руб</span></div><a class="card__link btn btn--border" href="product.html">Купить</a>
+                  </div>
+                </article>
+              </li>
+              <li class="card__wrap">
+                <article class="card__item card__item--rating"><span class="card__rating">4,6</span><img class="card__img" src="images/product-11.png" alt="Диван флоковый “H-58”"/>
+                  <div class="card__discription">
+                    <h3 class="card__title card__title--rating">Диван флоковый “H-58”</h3>
+                    <div class="card__price card__price-modification"><span class="card__price-rating">23 990 руб</span></div><a class="card__link btn btn--border" href="product.html">Купить</a>
+                  </div>
+                </article>
+              </li>
+              <li class="card__wrap">
+                <article class="card__item card__item--rating"><span class="card__rating">4,6</span><img class="card__img" src="images/product-12.png" alt="Диван из кожзама “R-43”"/>
+                  <div class="card__discription">
+                    <h3 class="card__title card__title--rating">Диван из кожзама “R-43”</h3>
+                    <div class="card__price card__price-modification"><span class="card__price-rating">33 990 руб</span></div><a class="card__link btn btn--border" href="product.html">Купить</a>
+                  </div>
+                </article>
+              </li>
+              <li class="card__wrap">
+                <article class="card__item card__item--rating"><span class="card__rating">4,6</span><img class="card__img" src="images/product-13.png" alt="Диван из шинила “С-42”"/>
+                  <div class="card__discription">
+                    <h3 class="card__title card__title--rating">Диван из шинила “С-42”</h3>
+                    <div class="card__price card__price-modification"><span class="card__price-rating">18 990 руб</span></div><a class="card__link btn btn--border" href="product.html">Купить</a>
+                  </div>
+                </article>
+              </li>
+              <li class="card__wrap">
+                <article class="card__item card__item--rating"><span class="card__rating">4,6</span><img class="card__img" src="images/product-14.png" alt="Диван велюровый “U-58”"/>
+                  <div class="card__discription">
+                    <h3 class="card__title card__title--rating">Диван велюровый “U-58”</h3>
+                    <div class="card__price card__price-modification"><span class="card__price-rating">21 990 руб</span></div><a class="card__link btn btn--border" href="product.html">Купить</a>
+                  </div>
+                </article>
+              </li>
+              <li class="card__wrap">
+                <article class="card__item card__item--rating"><span class="card__rating">4,5</span><img class="card__img" src="images/product-15.png" alt="Диван флоковый “F-41”"/>
+                  <div class="card__discription">
+                    <h3 class="card__title card__title--rating">Диван флоковый “F-41”</h3>
+                    <div class="card__price card__price-modification"><span class="card__price-rating">17 990 руб</span></div><a class="card__link btn btn--border" href="product.html">Купить</a>
+                  </div>
+                </article>
+              </li>
+              <li class="card__wrap">
+                <article class="card__item card__item--rating"><span class="card__rating">4,5</span><img class="card__img" src="images/product-16.png" alt="Диван велюровый “R-85”"/>
+                  <div class="card__discription">
+                    <h3 class="card__title card__title--rating">Диван велюровый “R-85”</h3>
+                    <div class="card__price card__price-modification"><span class="card__price-rating">34 990 руб</span></div><a class="card__link btn btn--border" href="product.html">Купить</a>
+                  </div>
+                </article>
+              </li>
+              <li class="card__wrap">
+                <article class="card__item card__item--rating"><span class="card__rating">4,5</span><img class="card__img" src="images/product-17.png" alt="Диван велюровый “S-44”"/>
+                  <div class="card__discription">
+                    <h3 class="card__title card__title--rating">Диван велюровый “S-44”</h3>
+                    <div class="card__price card__price-modification"><span class="card__price-rating">19 990 руб</span></div><a class="card__link btn btn--border" href="product.html">Купить</a>
+                  </div>
+                </article>
+              </li>
+              <li class="card__wrap">
+                <article class="card__item card__item--rating"><span class="card__rating">4,4</span><img class="card__img" src="images/product-18.png" alt="Диван из шинила “С-80”"/>
+                  <div class="card__discription">
+                    <h3 class="card__title card__title--rating">Диван из шинила “С-80”</h3>
+                    <div class="card__price card__price-modification"><span class="card__price-rating">20 990 руб</span></div><a class="card__link btn btn--border" href="product.html">Купить</a>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <div class="catalog__pagination pagination">
+            <ul class="pagination__list"></ul>
+          </div>
+          <div class="catalog__banner banner">
+            <div class="banner__card">
+              <div class="banner__image">
+                <picture><img src="images/promo-banner.jpg"/></picture>
+              </div>
+              <div class="banner__description">
+                <h4 class="banner__title">Оксфорд 1950</h4>
+                <p class="banner__text">Новая коллекция изысканных кресел</p><a class="banner__link" href="/catalog.html"><span class="banner__link-text">В каталог</span><span class="banner__link-arrow"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container"><a class="footer__logo" href="#"><img class="footer__img" src="images/logo.svg" alt="Логотип компании SDP.ru"/></a>
+        <ul class="footer__social social">
+          <li class="social__item"><a class="social__link" href="#">
+              <svg class="social__icon">
+                <use xlink:href="images/sprite.svg#fb"></use>
+              </svg></a></li>
+          <li class="social__item"><a class="social__link" href="#">
+              <svg class="social__icon">
+                <use xlink:href="images/sprite.svg#vk"></use>
+              </svg></a></li>
+          <li class="social__item"><a class="social__link" href="#">
+              <svg class="social__icon">
+                <use xlink:href="images/sprite.svg#instagram"></use>
+              </svg></a></li>
+        </ul>
+        <nav class="footer__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">О нас</li>
+            <li class="nav__item"><a class="nav__link link link--gray" href="#">О компании</a></li>
+            <li class="nav__item"><a class="nav__link link link--gray" href="#">Блог</a></li>
+          </ul>
+          <ul class="nav__list">
+            <li class="nav__item">Услуги</li>
+            <li class="nav__item"><a class="nav__link link link--gray" href="#">Доставка</a></li>
+            <li class="nav__item"><a class="nav__link link link--gray" href="#">Рассрочка и кредит</a></li>
+            <li class="nav__item"><a class="nav__link link link--gray" href="#">Сборка и установка</a></li>
+          </ul>
+          <ul class="nav__list">
+            <li class="nav__item">Связь с нами</li>
+            <li class="nav__item"><a class="nav__link link link--gray" href="#">Обратная связь</a></li>
+            <li class="nav__item"><a class="nav__link link link--gray" href="#">Контакты</a></li>
+          </ul>
+          <ul class="nav__list">
+            <li class="nav__item">Сотрудничество</li>
+            <li class="nav__item"><a class="nav__link link link--gray" href="#">Поставщикам</a></li>
+            <li class="nav__item"><a class="nav__link link link--gray" href="#">Оптовикам</a></li>
+            <li class="nav__item"><a class="nav__link link link--gray" href="#">Карьера</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <div class="copyright">
+      <div class="container copyright__container"><span class="copyright__text">SDP®</span><span class="copyright__text">2011-2021</span></div>
+    </div>
+  </body>
+</html>

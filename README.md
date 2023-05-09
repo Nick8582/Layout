@@ -6,3 +6,4 @@ In this repository, all developed site layouts will be laid out, with minimal JS
 4. Skillbox - The site was created as part of a training session with the Bootstrap CSS framework.
 5. Blanchard - This layout was written as part of a course project on Skillbox was written in pure CSS.
 6. High pass - studying grid css technology, as well as creating your own gulp assembly, testing how it all works and looks. This layout is not fully executed because all the basic technologies in it are clear and understandable.
+7. SitDownPls - the diploma project of the online store, the layout for the implementation of the SPA to the JavaScript framework has been prepared
