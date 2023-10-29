@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: $c-white-smoke;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}

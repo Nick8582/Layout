@@ -1,0 +1,42 @@
+.services {
+  margin-bottom: 30px;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    grid-gap: 30px;
+    
+    @media (max-width: 1000px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 700px) {
+      grid-template-columns: auto;
+    }
+  }
+
+  &__item {
+    padding: 20px;
+    border-radius: 8px;
+    background: $c-white;
+  }
+
+  &__name {
+    color: $c-black;
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  &__card {
+    list-style: none;
+
+    li {
+      font-size: 18px;
+
+
+      &:not(:last-child) {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

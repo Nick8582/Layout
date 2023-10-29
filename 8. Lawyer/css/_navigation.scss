@@ -1,0 +1,35 @@
+.navigation {
+  max-width: 250px;
+  width: 100%;
+  
+  @media (max-width: 600px) {
+    max-width: 200px;
+  }
+  
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+  }
+
+  &__item {
+    font-size: 20px;
+    font-weight: 500;
+
+    @media (max-width: 600px) {
+      font-size: 14px;
+    }
+    
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+  }
+}

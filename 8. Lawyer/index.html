@@ -1,0 +1,124 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Юридические услуги</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+	<div class="container header__container">
+		<div class="header__logo">
+			<img src="images/logo.png" alt="">
+		</div>
+		<nav class="header__navigation navigation">
+			<ul class="navigation__list">
+				<li class="navigation__item"><a href="#about">О нас</a></li>
+				<li class="navigation__item"><a href="#services">Услуги</a></li>
+				<li class="navigation__item"><a href="#contact">Контакты</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<main>
+	<section class="hero">
+		<div class="container hero__container">
+			<div class="hero__content">
+				<h1 class="hero__title">
+					<span class="hero__title--yellow">Юридическая</span>
+					консультация
+				</h1>
+				<a href="#contact" class="hero__btn">Задать вопрос</a>
+			</div>
+		</div>
+	</section>
+	<section class="about" id="about">
+		<div class="container about__container">
+			<div class="about__left">
+				<img src="images/about-img.png" alt="">
+			</div>
+			<div class="about__right">
+				<h2 class="about__title">О нас</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci aliquam atque beatae blanditiis consequatur dolores enim eum fuga labore modi necessitatibus officia pariatur quisquam reiciendis rem, sed tempore velit.</p>
+			</div>
+		</div>
+	</section>
+	<section class="services" id="services">
+		<div class="container">
+			<h2 class="title">Услуги</h2>
+			<ul class="services__list">
+				<li class="services__item">
+					<h3 class="services__name">Автоюрист и автоадвокат</h3>
+					<ul class="services__card">
+						<li>Возврат водительских прав</li>
+						<li>Юрист по ДТП</li>
+						<li>Юрист по ОСАГО / КАСКО</li>
+						<li>Споры по каршерингу</li>
+						<li>Независимая автоэкспертиза</li>
+						<li>Автоадвокат по уголовным делам</li>
+					</ul>
+				</li>
+				<li class="services__item">
+					<h3 class="services__name">Защита прав потребителей</h3>
+					<ul class="services__card">
+						<li>Возврат денег за товар</li>
+						<li>Возврат денег за услугу</li>
+						<li>Нарушение условий договора</li>
+						<li>Помощь в спорах с маркетплейсами</li>
+						<li>Помощь в туристических спорах</li>
+						<li>Помощь в спорах с банками</li>
+					</ul>
+				</li>
+				<li class="services__item">
+					<h3 class="services__name">Семейный юрист</h3>
+					<ul class="services__card">
+						<li>Расторжение брака </li>
+						<li>Раздел имущества и активов</li>
+						<li>Раздел ипотеки и кредитов</li>
+						<li>Споры о детях</li>
+						<li>Споры по алиментамх</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</section>
+	<section class="contact" id="contact">
+		<h2 class="title">Контакты</h2>
+		<div class="container contact__container">
+			<ul class="contact__about">
+				<li class="contact__item">
+					<div class="contact__img">
+						<img src="images/phone.svg" alt="">
+					</div>
+					<div class="contact__link">
+						<a href="tel:+7(999)9999999">+7 (999) 999 99 99</a>
+					</div>
+				</li>
+				<li class="contact__item">
+					<div class="contact__img">
+						<img src="images/email.svg" alt="">
+					</div>
+					<div class="contact__link">
+						<a href="mailto:mail@exemple.com">mail@exemple.com</a>
+					</div>
+				</li>
+			</ul>
+			<form method="POST" class="contact__form" >
+				<label class="contact__label">
+					<span>Имя</span>
+					<input type="text" required minlength="2" placeholder="Иван">
+				</label>
+				<label class="contact__label">
+					<span>Номер телефона</span>
+					<input type="text" required minlength="2" placeholder="+7 (999) 999 99 99">
+				</label>
+				<button class="contact__button">Отправить</button>
+			</form>
+		</div>
+	</section>
+</main>
+</body>
+</html>

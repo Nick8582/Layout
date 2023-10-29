@@ -1,0 +1,25 @@
+.header {
+  padding: 20px 15px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    @media (max-width: 400px) {
+      justify-content: center;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    
+    @media (max-width: 400px) {
+      display: none;
+    }
+  }
+
+  &__navigation {
+    display: block;
+  }
+}
