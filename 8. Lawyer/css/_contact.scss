@@ -1,9 +1,15 @@
 .contact {
   margin: 40px 0;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   &__container {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 
     @media (max-width: 900px) {
       flex-direction: column;

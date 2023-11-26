@@ -19,6 +19,8 @@
     img {
       display: block;
       width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4.06944px 4.88333px 0 rgba(0,0,0,.04), 0 16.27778px 14.65px 0 rgba(0,0,0,.04);
       object-fit: contain;
     }
   }
