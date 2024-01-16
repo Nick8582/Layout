@@ -1,0 +1,79 @@
+.about {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+  }
+
+  &__left {
+
+  }
+
+  &__right {
+    padding: 40px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      bottom: -100px;
+      right: -50px;
+      background: url("../images/doth.png") no-repeat;
+      background-size: contain;
+      opacity: .1;
+      width: 400px;
+      height: 400px;
+      box-shadow: 0 0 20px $c-white inset;
+    }
+  }
+
+  &__title {
+    font-size: 34px;
+    text-transform: uppercase;
+    color: $c-dark-blue;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    margin-bottom: 30px;
+    line-height: 2;
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    background: $c-dark-blue;
+    opacity: .9;
+    color: $c-white;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 20px $c-black;
+    transition: opacity $transition, box-shadow $transition;
+
+    &:hover {
+      opacity: 1;
+      box-shadow: 0 0 15px $c-black;
+    }
+
+    &Container {
+      max-width: 300px;
+      width: 100%;
+
+    }
+  }
+
+  &__image {
+    object-fit: contain;
+    display: block;
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px $c-black;
+  }
+
+}

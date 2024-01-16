@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="description" content="аварийный комиссар">
+	<meta name="generator" content="Автоком - аварийный комиссар">
+	<title>Аварийный комиссар</title>
+	<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/media.css" rel="stylesheet" type="text/css">
+	<link href="css/font-glyphicons.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.offcanvas.min.css" rel="stylesheet" type="text/css">
+	<link href="css/animate.css" rel="stylesheet" type="text/css">
+	<link href="css/simplecallback.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery.min_1.js" type="text/javascript"></script>
+	<script src="js/jquery-noconflict.js" type="text/javascript"></script>
+	<script src="js/jquery-migrate.min.js" type="text/javascript"></script>
+	<script src="js/caption.js" type="text/javascript"></script>
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.offcanvas.min.js" type="text/javascript"></script>
+	<script src="js/simplecallback.js" type="text/javascript"></script>
+	<script src="js/mootools-core.js" type="text/javascript"></script>
+	<script src="js/core.js" type="text/javascript"></script>
+	<script src="js/punycode.js" type="text/javascript"></script>
+	<script src="js/validate.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="bg">
+<header>
+	<div class="container-fluid header">
+		<div class="container">
+			<div class="row d-flex align-items-center">
+
+				<div class="header_logo">
+					<a href="/"><img src="images/header_logo.png" alt></a>
+				</div>
+
+				<div class="header_menu">
+					<nav class="navbar navbar-expand-lg">
+						<div class="container">
+							<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+							        aria-controls="offcanvasRight">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+							     aria-labelledby="offcanvasRightLabel">
+								<div class="offcanvas-header">
+									<h5 id="offcanvasRightLabel">Меню:</h5>
+									<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+									        aria-label="Close"></button>
+								</div>
+								<div class="offcanvas-body">
+									<div id="navbarSupportedContent">
+										<ul class="nav menu mod-list">
+											<li class="item-102"><a href="/#uslugi_link">Услуги</a></li>
+											<li class="item-103"><a href="/#otzivi_link">Отзывы</a></li>
+											<li class="item-104"><a href="/#contacts_link">Контакты</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+
+				<div class="header_contacts">
+					<div class="header_city"> Ваш город:
+						<div class="mcs-app">
+							Саратов
+						</div>
+					</div>
+					<div class="header_number">
+						<a class="no-link" href="tel:+79000000000">
+							8-900-0000-<span>000</span>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</header>
+
+<section class="header-mobile">
+
+	<div class="container">
+		<div class="row d-flex align-items-center header_mobile">
+			<div class="header_number_mobile">
+				<a class="no-link" href="tel:+79000000000">
+					8-900-0000-<span>000</span>
+				</a>
+			</div>
+			<div class="header_city_mobile">Ваш город:
+				<div class="mcs-app">
+					Саратов
+				</div>
+			</div>
+		</div>
+		<div class="row d-flex align-items-center">
+			<div class="header_logo_mobile">
+				<a href="/"><img src="images/header_logo.png" alt></a>
+			</div>
+
+			<div class="header_menu_mobile">
+				<nav class="navbar navbar-expand-lg">
+					<div class="container">
+						<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+						        aria-controls="offcanvasRight"><span class="navbar-toggler-icon"></span></button>
+
+						<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+						     aria-labelledby="offcanvasRightLabel">
+							<div class="offcanvas-header">
+								<h5 id="offcanvasRightLabel">Меню:</h5>
+								<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+								        aria-label="Close"></button>
+							</div>
+							<div class="offcanvas-body">
+								<div id="navbarSupportedContent">
+									<ul class="nav menu mod-list">
+										<li class="item-102"><a href="/#uslugi_link">Услуги</a></li>
+										<li class="item-103"><a href="/#otzivi_link">Отзывы</a></li>
+										<li class="item-104"><a href="/#contacts_link">Контакты</a></li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+	</div>
+
+</section>
+
+<section class="header_block_1">
+	<div class="container">
+		<div class="row header_block_1_2 d-flex align-items-top">
+			<div class="header_block_1_text">служба <br> аварийных комиссаров в
+				Саратове
+			</div>
+			<div class="header_block_1_img"><img src="images/header_clip.png" alt></div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="callback_block_mobile">
+				<a class="callback_link" href="tel:+79000000000"><span>Вызвать комиссара</span></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row header_block_1_2 d-flex align-items-top">
+			<div class="header_block_2_flex_block">
+				<div class="header_block_2_img"><img src="images/header_icon_1.png" alt></div>
+				<div class="header_block_2_text"><span>ПРИЕДЕМ</span> <br>быстро</div>
+			</div>
+			<div class="header_block_2_flex_block">
+				<div class="header_block_2_img"><img src="images/header_icon_2.png" alt></div>
+				<div class="header_block_2_text"><span>ОФОРМИМ</span> <br>документы на месте ДТП</div>
+			</div>
+			<div class="header_block_2_flex_block">
+				<div class="header_block_2_img"><img src="images/header_icon_3.png" alt></div>
+				<div class="header_block_2_text"><span>ПОМОЖЕМ</span> <br>получить страховое возмещение</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+
+<section class="block_1">
+	<div class="container">
+		<div class="title_main_black">Попали в ДТП в
+			Саратове?
+			<br>Что делать?
+		</div>
+
+		<div class="row block_1_icons d-flex align-items-top">
+			<div class="block_1_icon">
+				<div class="block_1_icon_img"><img src="images/block_1_icon_1.png" alt></div>
+				<div class="block_1_icon_text">Сохраняйте спокойствие</div>
+			</div>
+			<div class="block_1_icon">
+				<div class="block_1_icon_img"><img src="images/block_1_icon_2.png" alt></div>
+				<div class="block_1_icon_text">Включите аварийную сигнализацию</div>
+			</div>
+			<div class="block_1_icon">
+				<div class="block_1_icon_img"><img src="images/block_1_icon_3.png" alt></div>
+				<div class="block_1_icon_text">Позвоните аварийному комиссару</div>
+			</div>
+			<div class="block_1_icon">
+				<div class="block_1_icon_img"><img src="images/block_1_icon_4.png" alt></div>
+				<div class="block_1_icon_text">Установите знак аварийной остановки</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="callback_block1">
+	<a class="callback_link" href="tel:+79000000000"><span>Вызвать комиссара</span></a>
+</div>
+
+<section class="block_2">
+	<div class="container">
+		<div class="title_main_white">ПРЕИМУЩЕСТВА АВАРИЙНОГО КОМИССАРА</div>
+		<div class="title_main_white_small">Аварийный комиссар предоставляет следующие услуги:</div>
+		<div class="row block_2_icons d-flex align-items-top">
+			<div class="block_2_icon">
+				<div class="block_2_icon_img"><img src="images/block_2_icon_1.png" alt></div>
+				<div class="block_2_icon_text">Оформление документов на месте ДТП</div>
+			</div>
+			<div class="block_2_icon">
+				<div class="block_2_icon_img"><img src="images/block_2_icon_2.png" alt></div>
+				<div class="block_2_icon_text">ФОТОфиксация места ДТП</div>
+			</div>
+			<div class="block_2_icon">
+				<div class="block_2_icon_img"><img src="images/block_2_icon_3.png" alt></div>
+				<div class="block_2_icon_text">Проведение независимой экспертизы</div>
+			</div>
+			<div class="block_2_icon">
+				<div class="block_2_icon_img"><img src="images/block_2_icon_4.png" alt></div>
+				<div class="block_2_icon_text">Подготовка документов для обращения в СК</div>
+			</div>
+			<div class="block_2_icon">
+				<div class="block_2_icon_img"><img src="images/block_2_icon_5.png" alt></div>
+				<div class="block_2_icon_text">Эвакуация пострадавшего ТС за счет страховой компании</div>
+			</div>
+			<div class="block_2_icon">
+				<div class="block_2_icon_img"><img src="images/block_2_icon_6.png" alt></div>
+				<div class="block_2_icon_text">Урегулирование споров со страховой компанией</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="callback_block">
+	<a class="callback_link" href="tel:+79000000000"><span>Вызвать комиссара</span></a>
+</div>
+
+
+<section class="contant_main">
+	<div class="container">
+		<h1>Аварийный комиссар в
+			Саратове
+		</h1>
+		<div class="row d-flex align-items-top">
+			<div class="contant_main_img">
+				<img src="images/cont_img.jpg" alt>
+			</div>
+			<div class="contant_main_text">
+				<p>Аварийный комиссар – это физическое или юридическое лицо, которое предоставляет свои услуги страховой
+					компании или водителю с целью защиты их материальных и моральных интересов при ДТП. Автолюбители, которые
+					стали участниками аварии должны правильно с юридической точки зрения оформить происшествие.</p>
+
+				<p>Во-первых, не все подкованы в вопросах, касающихся действий при дорожно-транспортном происшествии. Во-вторых,
+					многие пребывают после столкновения в состоянии сильнейшего стресса, не позволяющего им применить на практике
+					теоретические знания.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="callback_block1">
+	<a class="callback_link" href="tel:+79000000000"><span>Вызвать комиссара</span></a>
+</div>
+
+<article id="uslugi_link"></article>
+<section class="block_3">
+	<div class="container">
+		<div class="title_main_white">Какие услуги оказывает аварийный комиссар?</div>
+		<div class="row block_3_flex d-flex align-items-top">
+			<div class="col-md-6">
+				<ul>
+					<li>Консультационная и <strong>правовая помощь участникам ДТП</strong>;</li>
+					<li><strong>Психологическая помощь</strong> участникам дорожно-транспортного происшествия;</li>
+					<li>До прибытия экипажа ГИБДД организация «кармана безопасности» на месте столкновения, выставление
+						светоотражаемых конусов, знаков аварийной остановки, организация движения в случае сложной дорожной
+						ситуации;
+					</li>
+					<li>В сложных авариях вызов бригады скорой помощи, эвакуация пассажиров;</li>
+					<li>Осуществление ФОТО и ВИДЕО- фиксации события с привязкой к местности;</li>
+					<li>Панорамная, узловая, детальная сьемка повреждений;</li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<ul>
+					<li>Составление схемы дорожно-транспортного происшествия;</li>
+					<li>Составление акта осмотра ТС с указанием повреждений, полученных в результате аварии;</li>
+					<li>Заполнение извещения о ДТП;</li>
+					<li>Оформление ДТП по Европротоколу (При соблюдении норм законодательства);</li>
+					<li>Обеспечение корректности в документах, оформляемых представителями компетентных органов.</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<div class="callback_block">
+	<a class="callback_link" href="tel:+79000000000"><span>Вызвать комиссара</span></a>
+</div>
+
+<article id="otzivi_link"></article>
+<section class="otzivi">
+	<div class="container">
+		<div class="title_main_black">Отзывы клиентов
+			<br>об аварийных комиссарах
+		</div>
+		<div class="row">
+
+			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+					        aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+					        aria-label="Slide 2"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="otzivi_text_p">
+							На парковке детского сада поцарапала машину, не знала что делать, позвонила мужу он вызвал аварийных
+							комиссаров. Приехал молодой парень объяснил, что когда повреждения маленькие аварию оформляют без ГИБДД по
+							протоколу страховой компании. На следящий день забрала протокол в офисе аварийных комиссаров и увезла в
+							свою страховую.
+						</div>
+						<div class="otzivi_name">Андрей Анисимов</div>
+						<div class="container item_block d-flex align-items-center"></div>
+					</div>
+					<div class="carousel-item">
+						<div class="otzivi_text_p">
+							На парковке детского сада поцарапала машину, не знала что делать, позвонила мужу он вызвал аварийных
+							комиссаров. Приехал молодой парень объяснил, что когда повреждения маленькие аварию оформляют без ГИБДД по
+							протоколу страховой компании. На следящий день забрала протокол в офисе аварийных комиссаров и увезла в
+							свою страховую.
+						</div>
+						<div class="otzivi_name">Андрей Анисимов</div>
+						<div class="container item_block d-flex align-items-center"></div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+				        data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+				        data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="callback_block1">
+	<a class="callback_link" href="tel:+79000000000"><span>Вызвать комиссара</span></a>
+</div>
+
+<article id="contacts_link"></article>
+<section class="contacts">
+	<div class="container contacts_block">
+		<div class="title_main_white">Контакты аварийного комиссара
+		</div>
+		<div class="row contacts_block_text">
+			<div class="mcs-content-sankt-peterburg"><p>г Саратов, ул Название, д 1</p></div>
+			<p>Телефон: <a class="no-link" href="tel:+79000000000"> 8-900-0000-000</a></p>
+			<p>E-mail: exemple@mail.ru</p>
+			<p>Режим работы: ПН-ВС, без выходных, КРУГЛОСУТОЧНО</p>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row footer_block d-flex">
+			<div class="footer_block_logo">
+				<div class="footer_logo">
+					<a href="/">
+						<img src="images/header_logo.png" alt>
+					</a>
+				</div>
+				<a class="no-link" href="tel:+79000000000">
+					<div class="footer_number">8-900-0000-<span>000</span></div>
+				</a>
+			</div>
+
+		</div>
+
+	</div>
+
+</footer>
+
+<footer class="footer-mobile">
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row d-flex flex-column">
+				<div class="footer_block_logo_mobile">
+					<div class="footer_logo">
+						<a href="/">
+							<img src="images/header_logo.png" alt>
+						</a>
+					</div>
+					<a class="no-link" href="tel:+79000000000">
+						<div class="footer_number">8-900-0000-<span>000</span></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="js/build.js" defer="defer" type="text/javascript"></script>
+</body>
+</html>

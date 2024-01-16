@@ -1,0 +1,26 @@
+.navigation {
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+  &__link {
+    color: $c-black;
+    opacity: .7;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity $transition;
+
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

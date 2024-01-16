@@ -1,0 +1,81 @@
+.stages {
+  &__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 34px;
+    text-transform: uppercase;
+    color: $c-dark-blue;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 25px;
+  }
+
+  &__image {
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    border-radius: 50%;
+    border: 2px solid $c-dark-blue;
+    opacity: .8;
+
+    svg  {
+      display: block;
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      stroke: $c-dark-blue;
+      fill: $c-dark-blue;
+    }
+  }
+
+  &__number {
+    margin-left: 40px;
+    margin-right: auto;
+    font-size: 150px;
+    color: $c-dark-blue;
+    opacity: .5;
+    font-weight: 700;
+    line-height: 120px;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $c-dark-blue;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 300;
+    max-width: 340px;
+  }
+}
