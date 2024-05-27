@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Строительно-технические экспертизы</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <meta name="yandex-verification" content="82903b06442e7599" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="assets/js/jquery.maskedinput.min.js"></script>
+
+
+  <script type="text/javascript" src="https://www.l2.io/ip.js?var=userip"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
+
+  <script>
+    (function(w, c) {
+      (w[c] = w[c] || []).push(function() {
+        new zTracker({
+          "id": "355832a605e7f8739eb7ddbf4f40270e11109",
+          "metrics": {
+            "metrika": "86511019"
+          }
+        });
+      });
+    })(window, "zTrackerCallbacks");
+  </script>
+  <script async id="zd_ct_phone_script" src="https://my.zadarma.com/js/ct_phone.min.js"></script>
+
+  <script type="text/javascript">
+    (function(m, e, t, r, i, k, a) {
+      m[i] = m[i] || function() {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(86511019, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/86511019" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+  <script>
+    var metricsFn = function() {
+      console.log(ActiveScore.timer);
+      console.log(ActiveScore.need);
+      var c1 = this.getCookie(this.cookieName);
+      console.log(c1);
+      if (ActiveScore.timer >= ActiveScore.need) {
+        console.log("событие отправилось");
+        /* Тут перечислять все что нужно будет вызвать по достижению цели */
+        ym(86511019, 'reachGoal', 'time_left');
+        /* Тут перечислять все что нужно будет вызвать по достижению цели */
+      }
+    };
+
+    var ActiveScore = {
+      /* Настройки которые надо менять */
+      need: 60, // секунды
+      checkTime: 10, // секунды. период проверки
+      loop: false, // Повторять набор?
+      /* Настройки которые надо менять */
+
+      cookieName: "60sec_ap",
+      sendFn: null,
+      parts: 0,
+      active_parts: 0,
+      timer: 0,
+      events: [
+        "touchmove",
+        "blur",
+        "focus",
+        "focusin",
+        "focusout",
+        "load",
+        "resize",
+        "scroll",
+        "unload",
+        "click",
+        "dblclick",
+        "mousedown",
+        "mouseup",
+        "mousemove",
+        "mouseover",
+        "mouseout",
+        "mouseenter",
+        "mouseleave",
+        "change",
+        "select",
+        "submit",
+        "keydown",
+        "keypress",
+        "keyup",
+        "error",
+      ],
+
+      setEvents: function() {
+        for (var index = 0; index < this.events.length; index++) {
+          var eName = this.events[index];
+          window.addEventListener(eName, function(e) {
+            if (e.isTrusted && ActiveScore.period.events == false) {
+              ActiveScore.period.events = true;
+            }
+          });
+        }
+      },
+
+      period: {
+        start: 0,
+        end: 0,
+        events: false,
+      },
+
+      init: function(fn) {
+        this.calcParts();
+        this.setEvents();
+        if (this.checkCookie()) {
+          this.sendFn = fn;
+          this.start();
+        }
+      },
+
+      calcParts: function() {
+        this.parts = Math.ceil(this.need / this.checkTime);
+      },
+
+      setPeriod: function() {
+        this.period.start = this.microtime();
+        this.period.end = this.period.start + this.checkTime;
+        this.period.events = false;
+      },
+
+      microtime: function() {
+        var now = new Date().getTime() / 1000;
+        var s = parseInt(now);
+        return s;
+      },
+
+      start: function() {
+        this.setPeriod();
+        this.runPeriod();
+      },
+
+      timeoutId: null,
+
+      checkPeriod: function() {
+        if (this.period.events == true) {
+          this.active_parts = this.active_parts + 1;
+          // console.log('В этой секции были действия');
+        } else {
+          // console.log('В этой секции НЕБЫЛО действия');
+        }
+        this.timer = this.active_parts * this.checkTime;
+        console.log(
+          this.active_parts + " / " + this.parts + " [" + this.timer + "]"
+        );
+
+        if (this.checkSecs()) {} else {
+          this.start();
+        }
+        this.setCookie(this.cookieName, this.active_parts);
+      },
+
+      checkSecs: function() {
+        if (this.timer >= this.need) {
+          this.send();
+          if (this.loop == true) {
+            this.timer = 0;
+            this.active_parts = 0;
+            return false;
+          } else {
+            // console.log('Завершили проверку активности');
+            return true;
+          }
+        }
+        return false;
+      },
+
+      timeoutFn: function() {
+        ActiveScore.checkPeriod();
+      },
+
+      runPeriod: function() {
+        this.timeoutId = setTimeout(this.timeoutFn, this.checkTime * 1000);
+      },
+
+      send: function() {
+        this.setCookie(this.cookieName, this.active_parts * this.active_parts);
+        this.sendFn();
+      },
+
+      checkCookie: function() {
+        var c = this.getCookie(this.cookieName);
+
+        if (c == null) {
+          return true;
+        } else {
+          c = parseInt(c);
+          if (c >= this.parts) {
+            // console.log('Скрипт даже не запустился...');
+            if (this.loop == true) {
+              return true;
+            }
+            return false;
+          } else {
+            this.active_parts = c;
+            return true;
+          }
+        }
+      },
+
+      setCookie: function(name, value, days) {
+        var expires = "";
+        if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+          expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+      },
+      getCookie: function(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(";");
+        for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == " ") c = c.substring(1, c.length);
+          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+      },
+      eraseCookie: function(name) {
+        document.cookie =
+          name + "=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+      },
+    };
+
+    ActiveScore.init(metricsFn);
+  </script>
+</head>
+
+<body>
+  <!-- ======= Top Bar ======= -->
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column ">
+    <section id="topbar" class="d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <div class="header-fast">
+            <i class="bi bi-envelope-fill"></i><a href="email:avan-exp@yandex.ru">avan-exp@yandex.ru</a>
+          </div>
+          <div class="header-fast">
+            <i class="bi bi-phone-fill phone-icon"></i> <a class="zphone" href="tel:+78452258626">8 (8452) 258-626</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html">Строительно <br> техническая <br>экспертиза</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html#hero">Главная</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">О нас</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Направления</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Контакты</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+      <h1>Строительно-техническая<br> экспертиза</h1>
+      <h2>Наша команда поможет с решением экспертно-строительных<br> вопросов</h2>
+      <button class="btn-get-started scrollto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Заказать звонок</button>
+    </div>
+  </section>
+  <!-- End Hero -->
+  <div class="offcanvas offcanvas-bottom offcanvas-window" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="shadow-background">
+      <div class="offcanvas-header d-flex justify-content-end">
+        <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body text-center ">
+        <h3 class="offcanvas-title text-white mb-4" id="offcanvasBottomLabel">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ 
+        </h3>
+        <div class="container">
+          <p class="text-white">Введите номер для обратной связи.<br> 
+          </p>
+          <form id="ajax_form_phone" class="d-flex col-md-6 mx-auto modal-flex-colum">
+            <input type="tel" class="border-radius bfh-phone mx-2 form-control form-control-tel contactContent ym-record-keys" id="inputTell" data-format="+7 (ddd) ddd-dddd" name="inputTell" required>
+            <input id="btn_phone" type="submit" class="btn-get-started scrollto col-sm-6 col-12 p-3 contactContent" value="Получить консультацию">
+          </form>
+          <div id="result_form_phone"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+            <h3>О нас</h3>
+            <p class="fst-italic">
+              Мы профессионально предоставляем полный спектр услуг в строительной экспертизе, от обследования квартир до торгово-развлекательных центров и заводов. Подтверждением этого являются наши постоянные клиенты.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Полностью официальное сотрудничество на основании договора.</li>
+              <li><i class="bi bi-check-circle"></i> В штате — только действующие эксперты с опытом работы 5+ лет.</li>
+              <li><i class="bi bi-check-circle"></i> Сопровождение полного цикла: предоставляем каждому клиенту персонального менеджера.</li>
+            </ul>
+            <p class="validate-p">
+              С момента основания отдел строительной экспертизы предоставляет услуги для учреждений, организаций всех форм собственности и направлений хозяйственной деятельности, частных лиц. Команда экспертов готова к разрешению нестандартных задач и комплексной коллективной
+              работе. Привлекаемые к выполнению заданий Заказчика специалисты обладают профессиональным опытом по предмету заданий, не менее пяти лет.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="box">
+              <span>01</span>
+              <h4>Наличие разработанных методик проведения экспертиз</h4>
+              <p>Большой опыт исследовательской деятельности в сфеоре строительно-технических экспертиз и рецензирования.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="50">
+            <div class="box">
+              <span>02</span>
+              <h4>Доступное <br> ценообразование <br> <pre> </h4>
+              <p>Каждая заявка разбирается индивидуально. Цена формируется исходя из объемов и сложности работ.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <span>03</span>
+              <h4> Бесплатная <br> консультация <br> <pre> </h4>
+              <p>Персональный менеджер подробно и понятно ответит на интересующие Вас вопросы. Открыто согласуем все условия сотрудничества.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Why Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Направления</span>
+          <h2>Направления</h2>
+          <p>Выберите интересующую область исследования</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <div class="icon"><i class="bx bx-water"></i></div>
+              <h4><a class="name-naprav">Оценка ущерба от <br>залива/пожара</a></h4>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Оценка ущерба от залива/пожара</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="validate-p">С необходимостью оценки ущерба помещению может столкнуться каждый. Это относительно распространенная процедура. Вместе с тем, каждый отдельный случай имеет свои особенности. В то же время при произведении любой оценки ущерба важно
+                        точное соблюдение установленных требований законодательства.</p>
+                      <h4>Как это работает?</h4>
+                      <ul class="modal-list-style">
+                        <li><span>1</span> Предоставить необходимый пакет документов в экспертную организацию.</li>
+                        <li><span>2</span> Заключить договор на оказание услуг.</li>
+                        <li><span>3</span> Получить результат в виде экспертного заключения.</li>
+                      </ul>
+                      <p class="validate-p">Независимая оценка ущерба, нанесенного в результате залива помещения, как правило, гарантирует вам возмещение в ходе досудебного разбирательства. В дальнейшем все понесенные Вами, как потерпевшим, затраты на проведение независимой
+                        оценки ущерба будут возмещены в судебном порядке виновником. Вместе с тем, провести независимую оценку может также и виновная сторона в случае, если есть подозрение, что предъявлена явно завышенная сумма материального ущерба.</p>
+                    </div>
+                  </div>
+                  <div class="row mx-3">
+                    <table class="table-prise">
+                      <tr>
+                        <td>Вид:</td>
+                        <td>Стоимость: </td>
+                      </tr>
+                      <tr>
+                        <td>Экспертиза ущерба после залива</td>
+                        <td>от 5000 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>Экспертиза причины залива</td>
+                        <td>от 5000 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>Экспертиза ущерба после пожара</td>
+                        <td>от 5000 руб.</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn-submit col-lg-3 col-6 btn-get-started p-2 red-btn-help bottomnumber" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Оставить заявку</button>
+                  <button type="button" class="btn btn-secondary close-modal" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="50">
+            <div class="icon-box" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+              <div class="icon"><i class="bx bx-home"></i></div>
+              <h4><a class="name-naprav">Экспертиза технического состояния/аварийности здания</a></h4>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel2">Экспертиза технического состояния/аварийности здания</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="validate-p">Экспертиза аварийного здания (сооружения) помогает разработать перечень срочных противоаварийных мероприятий. Обычно они включают в себя полную замену конструктивных элементов, представляющих опасность для человека. Другие возможные
+                        противоаварийные мероприятия – разгрузка здания, значительное уменьшение интенсивности его эксплуатации, установка временных стоек, креплений и ограждений, указывающих на небезопасность площадки. Экспертиза также проводится для
+                        получения объективной оценки и реального технического состояния здания.
+                      </p>
+                      <p class="validate-p">Главный признак аварийного состояния жилого объекта – более половины помещений и несущих конструктивных элементов (фундамент и стены) в нем представляют опасность для жизни людей. Они имеют такие деформации и повреждения, которые
+                        в любой момент могут спровоцировать обрушение или опрокидывание здания. Например, осадка фундамента, частичное или полное разрушение внутренних перегородок и кровли, глубокие трещины на фасаде здания.
+                      </p>
+                      <h4>Как это работает?</h4>
+                      <ul class="modal-list-style">
+                        <li><span>1</span> Предоставить необходимый пакет документов в экспертную организацию.</li>
+                        <li><span>2</span> Заключить договор на оказание услуг.</li>
+                        <li><span>3</span> Получить результат в виде экспертного заключения.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row mx-3">
+                    <table class="table-prise">
+                      <tr>
+                        <td>Вид:</td>
+                        <td>Стоимость: </td>
+                      </tr>
+                      <tr>
+                        <td>Экспертиза аварийности здания</td>
+                        <td>от 9000 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>Экспертиза технического состояния здания</td>
+                        <td>от 7000 руб.</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn-submit col-lg-3 col-6 btn-get-started p-2 red-btn-help bottomnumber" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Оставить заявку</button>
+                  <button type="button" class="btn btn-secondary close-modal" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+              <div class="icon"><i class="bx bx-search-alt"></i></div>
+              <h4><a class="name-naprav">Экспертиза качества строительно-монтажных работ</a></h4>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel3">Экспертиза качества строительно-монтажных работ</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="validate-p">Экспертиза качества строительных работ – это проверка соответствия всех необходимых показателей строительных работ определенным требованиям, в том числе требованиям нормативных документов в области строительства (СНиП), условиям
+                        договора подряда, требованиям проекта и другим документам.
+                      </p>
+                      <p class="validate-p">Необходимость проведения строительно-технических экспертиз качества работ возникла с появлением недобросовестных исполнителей (подрядчиков), которые при строительстве могут использовать неквалифицированный труд, некачественные материалы,
+                        что в итоге приводит к дефектам и деформациям строительного объекта, обрушению, малому сроку эксплуатации или вообще к невозможности эксплуатировать здание. В этих случаях заказчик страдает материально, а также подвергает опасности
+                        здоровье и жизнь людей, которые будут находиться в таком здании. Поэтому при сдаче объекта в эксплуатацию возникает необходимость строительно-технической экспертизы на предмет качества выполненных работ.</p>
+                      <p class="validate-p">Необходимо также учитывать, что дефекты могут проявляться не сразу, а через месяцы и даже годы. В таком случае можно предъявить иск застройщику или подрядной организации на основании соответствующего заключения строительной экспертизы.</p>
+                      <h4>Как это работает?</h4>
+                      <ul class="modal-list-style">
+                        <li><span>1</span> Предоставить необходимый пакет документов в экспертную организацию.</li>
+                        <li><span>2</span> Заключить договор на оказание услуг.</li>
+                        <li><span>3</span> Получить результат в виде экспертного заключения.</li>
+                      </ul>
+                      <p class="validate-p">В дальнейшем все понесенные Вами, как потерпевшим, затраты на проведение экспертного исследования будут возмещены в судебном порядке недобросовестным подрядчиком. Вместе с тем, провести независимую экспертизу может также и виновная
+                        сторона в случае, если есть подозрение, что предъявлена явно завышенная сумма материального ущерба.</p>
+                    </div>
+                  </div>
+                  <div class="row mx-3">
+                    <table class="table-prise">
+                      <tr>
+                        <td>Вид:</td>
+                        <td>Стоимость:</td>
+                      </tr>
+                      <tr>
+                        <td>Экспертиза качества строительно-монтажных работ</td>
+                        <td>от 5000 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>Экспертиза качества ремонта</td>
+                        <td>от 7000 руб.</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn-submit col-lg-3 col-6 btn-get-started p-2 red-btn-help bottomnumber" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Оставить заявку</button>
+                  <button type="button" class="btn btn-secondary close-modal" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="icon-box" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+              <div class="icon"><i class="bx bx-money"></i></div>
+              <h4><a class="name-naprav">Экспертиза объектов капитального строительства</a></h4>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel4">Экспертиза объектов капитального строительства
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="validate-p">Экспертиза объектов капитального строительства – это процедура проверки технического состояния объекта, с целью выявить повреждения и дефекты, возможне нарушения технологии постройки и установить пригодность здания или сооружения к эксплуатации. В рамках экспертизы зданий и сооружений, может быть произведена оценка стоимости исправления обнаруженных конструктивных изъянов, оценка возможности проведения реконструкции или перепланировки и расчет допустимых изменений в конструкции здания и его составляющих элементов.</p>
+                      <p class="validate-p">Эксперты нашей компании имеют большой опыт в по экспертизе зданий и сооружений, грамотно учтут все особенности объектов исследования, способные повлиять на результат экспертизы. Имеющиеся допуски и разрешения позволяют участвовать нам, как во внесудебных, так и в судебных разбирательствах, предоставляя заказчику полную и достоверную картину о техническом статусе объектов исследования.</p>
+                      <h4>Как это работает?</h4>
+                      <ul class="modal-list-style">
+                        <li><span>1</span> Предоставить необходимый пакет документов в экспертную организацию.</li>
+                        <li><span>2</span> Заключить договор на оказание услуг.</li>
+                        <li><span>3</span> Получить результат в виде экспертного заключения.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row mx-3">
+                    <table class="table-prise">
+                      <tr>
+                        <td>Вид:</td>
+                        <td>Стоимость:</td>
+                      </tr>
+                      <tr>
+                        <td>Экспертиза крыши</td>
+                        <td>от 8000 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>Экспертиза бетона</td>
+                        <td>от 10000 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>Экспертиза фундамента</td>
+                        <td>от 8000 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>Экспертиза качества постройки</td>
+                        <td>от 10000 руб.</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn-submit col-lg-3 col-6 btn-get-started p-2 red-btn-help bottomnumber" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Оставить заявку</button>
+                  <button type="button" class="btn btn-secondary close-modal" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
+              <div class="icon"><i class="bx bx-edit"></i></div>
+              <h4><a class="name-naprav">Экспертиза проектно-сметной <br>документации</a></h4>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel5">Экспертиза проектно-сметной документации</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="validate-p">Экспертиза проектно-сметной документации – это базовый элемент контроля бюджета в процессе реализации проекта на любом этапе его жизненного цикла и эффективный инструмент прозрачности осуществленных или планируемых к осуществлению капитальных
+                        вложений.
+                      </p>
+                      <p class="validate-p">С помощью экспертной проверки можно оптимизировать расходы на выполнение строительных работ, установить незапланированные затраты и правильно рассчитать предстоящие капиталовложения.
+                      </p>
+                      <h4>Как это работает?</h4>
+                      <ul class="modal-list-style">
+                        <li><span>1</span> Предоставить необходимый пакет документов в экспертную организацию.</li>
+                        <li><span>2</span> Заключить договор на оказание услуг.</li>
+                        <li><span>3</span> Получить результат в виде экспертного заключения.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row mx-3">
+                    <table class="table-prise">
+                      <tr>
+                        <td>Вид:</td>
+                        <td>Стоимость:</td>
+                      </tr>
+                      <tr>
+                        <td>Экспертиза сметной документации</td>
+                        <td>от 8000 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>Экспертиза проектной документации</td>
+                        <td>от 8000 руб.</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn-submit col-lg-3 col-6 btn-get-started p-2 red-btn-help bottomnumber" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Оставить заявку</button>
+                  <button type="button" class="btn btn-secondary close-modal" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="250">
+            <div class="icon-box" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
+              <div class="icon"><i class="bx bxs-book-bookmark"></i></div>
+              <h4><a class="name-naprav">Судебная строительно-техническая экспертиза</a></h4>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel6">Судебная строительно-техническая экспертиза</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="validate-p">Среди многообразия существующих видов судебных экспертиз, на сегодняшний день одной из наиболее востребованных является судебная строительно-техническая экспертиза. Предметом строительно-технической экспертизы является устанавливаемые
+                        на основе специальных знаний в области технических, организационных и экономических вопросов сведения о фактах, имеющие доказательственное значение при судебном разбирательстве. Главным требованием к эксперту, проводящему судебную
+                        экспертизу, является наличие высшего профильного образования и (или) диплома о профессиональной переподготовке с правом ведения деятельности. В случае отсутствия профильного образования лицо не может выступать в качестве эксперта
+                        и проводить экспертизы данного вида.</p>
+
+                      <h4>Как это работает?</h4>
+                      <ul class="modal-list-style">
+                        <li><span>1</span> Предоставить необходимый пакет документов в экспертную организацию.</li>
+                        <li><span>2</span> Ожидаете назначения судебной эксперизы</li>
+                        <li><span>3</span> Результат в виде экспертного заключения передаем в суд.</li>
+                      </ul>
+                      <p class="validate-p">В дальнейшем все понесенные Вами, как потерпевшим, затраты на проведение экспертного исследования будут возмещены в судебном порядке недобросовестным подрядчиком. Вместе с тем, провести независимую экспертизу может также и виновная
+                        сторона в случае, если есть подозрение, что предъявлена явно завышенная сумма материального ущерба.</p>
+
+                    </div>
+                  </div>
+                  <div class="row mx-3">
+                    <table class="table-prise">
+                      <tr>
+                        <td>Вид:</td>
+                        <td>Стоимость:</td>
+                      </tr>
+                      <tr>
+                        <td>Судебная строительно-техническая экспертиза</td>
+                        <td>от 8000 руб.</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn-submit col-lg-3 col-6 btn-get-started p-2 red-btn-help bottomnumber" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Оставить заявку</button>
+                  <button type="button" class="btn btn-secondary close-modal" data-bs-dismiss="modal">Закрыть</button>
+                  <!--<button type="button" class="btn btn-primary">Оставить заявку</button>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="row mt-5 flex-wrap">
+            <div class="my-3 row flex-wrap">
+              <div class="col-lg-1 col-12" data-aos="fade-up" data-aos-delay="300">
+                <h5 class="warning-img">ВАЖНО</h5>
+              </div>
+              <div class="col-lg-11 col-12" data-aos="fade-up" data-aos-delay="350">Список предлагаемых направлений не является исчерпывающим. При возникновении других вопросов целесообразно до назначения экспертизы обратиться за консультацией к специалисту.
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="850">
+              <button class="btn-submit col-lg-3 col-6 btn-get-started p-2 red-btn-help" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Обратиться к
+                специалисту</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-3">
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>«У каждого здания есть, по крайней мере, две жизни — одна из них в воображении создателя, а другая — в его воплощении. И эти две жизни никогда не бывают похожими друг на друга».</h3>
+          <p>Рем Колхас</p>
+          <!--<a class="cta-btn" href="#">Форма обратной связи</a>-->
+        </div>
+
+      </div>
+    </section>
+    <!-- End Cta Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Контакты</span>
+          <h2>Контакты</h2>
+          <p>Для подробной информации обратитесь</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Наш адрес</h3>
+              <p>г. Саратов ул. Чернышевского д. 159/161</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email</h3>
+              <p><a href="https://exp-stroi.ru/avan-exp@yandex.ru">avan-exp@yandex.ru</a></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Номер телефона</h3>
+              <p><a class="zphone" href="tel:+78452258626">8 (8452) 258-626</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row" data-aos="fade-up">
+
+          <div class="col-lg-6 ">
+            <div style="position:relative;overflow:hidden; height: 100%; width: 100%;">
+              <a href="https://yandex.ru/maps/org/avangard_ekspert/192805986920/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Авангард Эксперт</a>
+              <a href="https://yandex.ru/maps/194/saratov/category/expertise/184105608/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Экспертиза в Саратове</a>
+              <iframe src="https://yandex.ru/map-widget/v1/?ll=46.040408%2C51.521335&mode=poi&poi%5Bpoint%5D=46.035266%2C51.523960&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D192805986920&z=15.6" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+            </div>
+            <!-- <div id="map" style="width: 100%; height: 400px"></div> -->
+          </div>
+
+          <div class="col-lg-6 d-none d-lg-block">
+            <form id="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control ym-record-keys" id="name" placeholder="Имя" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="tel" class="form-control ym-record-keys" name="phone" id="phone" placeholder="Телефон" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="email" class="form-control ym-record-keys" name="email" id="email" placeholder="Email">
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" id="text_comment" placeholder="Сообщение" required></textarea>
+              </div>
+              <div class="text-center my-3"><button type="submit" id="btn_submit">Отправить</button></div>
+            </form>
+            <div class="my-3">
+              <div class="sent-message"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Строительная экспертиза</h3>
+              <p>г.Саратов ул. Чернышевского 159/161<br><br>
+                <strong>Телефон:</strong> <a class="zphone" href="tel:+78452258626">8 (8452) 258-626</a><br>
+                <strong>Email:</strong> <a href="email:avan-exp@yandex.ru">avan-exp@yandex.ru</a><br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Перезвонить Вам?</h4>
+            <p>Оставте номер и мы с Вами свяжемся в ближайшее время</p>
+            <form id="ajax_form_phone2" class="d-flex col-md-6 mx-auto modal-flex-colum w-100 row">
+              <input type="tel" class="border-radius bfh-phone mx-2 form-control form-control-tel contactContent ym-record-keys col-6" id="inputTell2" data-format="+7 (ddd) ddd-dddd" maxlength="12" name="inputTell2" required>
+              <input id="btn_phone2" type="submit" class="btn-get-started scrollto col-sm-6  p-lg-3 contactContent col-6" value="Получить консультацию">
+            </form>
+            <div id="result_form_phone2"></div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!--<div class="copyright">
+        &copy; Copyright <strong><span>Desirise</span></strong>.
+      </div> -->
+      <div class="text-center">
+        <a title="Скачивание файла политики конфиденциальности" href="politic.docx" download>Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="index.html#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <a class="btn btn-primary email-bt phone-bt " href="tel:+78452258626">
+
+    <div class="text-call">
+      <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+        <path
+          d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+      </svg>
+      <span>Обратная<br>связь</span>
+    </div>
+  </a>
+
+  <button class="btn btn-primary email-bt email-des" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+
+    <div class="text-call">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+      </svg>
+      <span>Обратная<br>связь</span>
+    </div>
+  </button>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel">Оставьте заявку и мы с вами свяжемся</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body offcanvas-body-form">
+      <form class="form-right-modal" id="contactForm_modal">
+        <h5 class="mb-4">Оставить заявку:</h5>
+        <div class="row align-items-stretch mb-5 col-lg-12 contactContent">
+          <div class="col-md-12">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control ym-record-keys" placeholder="Имя" name="nameModal" id="nameModal" required>
+              <label for="floatingTextarea">Имя</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control ym-record-keys" placeholder="email" id="emailModal" name="emailModal">
+              <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="tel" class="form-control bfh-phone ym-record-keys" placeholder="Телефон" id="phoneModal" name="phoneModal" data-format="+7 (ddd) ddd-dddd" required>
+              <label for="floatingTextarea">Телефон</label>
+            </div>
+          </div>
+
+          <div class="form-floating mb-4 ">
+            <textarea class="form-control" placeholder="Сообщение" id="messageModal" name="messageModal" style="height: 90px"></textarea>
+            <label for="floatingTextarea2" class="px-4">Сообщение</label>
+          </div>
+
+          <div id="result_form_modal"></div>
+          <div class="text-center">
+            <input id="submitButton_Modal" type="submit" value="Отправить">
+          </div>
+        </div>
+      </form>
+      <div class="my-2">
+        <div class="sent-messageModal"></div>
+      </div>
+      <strong>Телефон:</strong> <a class="zphone" href="tel:+78452258626">8 (8452) 258-626</a><br>
+      <strong>Email:</strong> <a href="email:avan-exp@yandex.ru">avan-exp@yandex.ru</a><br>
+    </div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/js/jquery.hyphen.ru.js"></script>
+  <script src="assets/js/jquery.hyphen.ru.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
