@@ -1,0 +1,5 @@
+# Сгенерировано https://pr-cy.ru/
+
+Sitemap: https://exp-stroit.ru/sitemap.xml
+User-agent: *
+Allow: https://exp-stroit.ru
